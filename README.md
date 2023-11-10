@@ -1,6 +1,6 @@
 # VW
 
-> Some usefull flutter components
+> Some usefull Flutter components
 
 🚧🚧 UNDER CONSTRUCTION 🚧🚧
 
