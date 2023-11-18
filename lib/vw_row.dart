@@ -34,17 +34,35 @@ class VWRow extends StatelessWidget {
       throw Exception("VWRow: scrollable and expandItems can't be true at the same time");
     }
 
+    if (controller != null && scrollable == false) {
+      throw Exception("VWRow: controller can't be used when scrollable is false");
+    }
+
+    if (reverseScroll == true && scrollable == false) {
+      throw Exception("VWRow: reverseScroll can't be used when scrollable is false");
+    }
+
     final List<Widget> elements = [];
 
     for (int i = 0; i < children.length; i++) {
       if (expandItems) {
-        elements.add(Expanded(child: children[i]));
+        elements.add(
+          Expanded(
+            key: Key("vw-row-expanded-$i"),
+            child: children[i],
+          ),
+        );
       } else {
         elements.add(children[i]);
       }
 
       if (i < children.length - 1) {
-        elements.add(SizedBox(width: gap));
+        elements.add(
+          SizedBox(
+            key: Key("vw-row-gap-$i"),
+            width: gap,
+          ),
+        );
       }
     }
 
