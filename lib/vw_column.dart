@@ -26,7 +26,10 @@ class VWColumn extends StatelessWidget {
       elements.add(children[i]);
 
       if (i < children.length - 1) {
-        elements.add(SizedBox(height: gap));
+        elements.add(SizedBox(
+          key: Key("vw-column-gap-$i"),
+          height: gap,
+        ));
       }
     }
 
