@@ -14,7 +14,7 @@ class VWRowExamplePage extends StatelessWidget {
         child: VWColumn(
           children: [
             VWRow(
-              gap: 1,
+              gap: 10,
               padding: const EdgeInsets.all(10),
               scrollable: true,
               children: [
