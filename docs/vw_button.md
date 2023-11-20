@@ -2,34 +2,45 @@
 
 `VWButton` is a custom widget that extends the StatefulWidget. It allows you to create a button with additional features.
 
-## Parameters
+## Properties
 
-- `fullWidth`: A boolean value that determines whether the button should take up the full width of the parent widget.
-- `label`: The text that is displayed on the button.
-- `color`: The background color of the button. Default is null, which means the button will use the default color.
-- `gradient`: The gradient of the button. Default is null, which means the button will not have a gradient.
-- `splashColor`: The splash color of the button.
-- `labelStyle`: The style of the label text. Default is null, which means the label will use the default text style.
-- `leftIcon`: The icon that is displayed on the left side of the label. Default is null, which means no icon will be displayed on the left side.
-- `leftIconSize`: The size of the left icon. Default is null, which means the icon will use the default size.
-- `rightIcon`: The icon that is displayed on the right side of the label. Default is null, which means no icon will be displayed on the right side.
-- `rightIconSize`: The size of the right icon. Default is null, which means the icon will use the default size.
+| Property        | Type             | Description                                                                       | Default Value                          |
+| --------------- | ---------------- | --------------------------------------------------------------------------------- | -------------------------------------- |
+| `fullWidth`     | bool             | Determines whether the button should take up the full width of the parent widget. | false                                  |
+| `label`         | String           | The text that is displayed on the button.                                         | 'Button'                               |
+| `color`         | Color            | The background color of the button.                                               | null                                   |
+| `gradient`      | Gradient         | The gradient of the button.                                                       | null                                   |
+| `splashColor`   | Color            | The splash color of the button.                                                   | Colors.white                           |
+| `labelStyle`    | TextStyle        | The style of the label text.                                                      | null                                   |
+| `leftIcon`      | IconData         | The icon that is displayed on the left side of the label.                         | null                                   |
+| `leftIconSize`  | double           | The size of the left icon.                                                        | null                                   |
+| `rightIcon`     | IconData         | The icon that is displayed on the right side of the label.                        | null                                   |
+| `rightIconSize` | double           | The size of the right icon.                                                       | null                                   |
+| `isLoading`     | bool             | Determines whether the button should display a loading indicator.                 | false                                  |
+| `loadingLabel`  | String           | The text that is displayed when the button is loading.                            | null                                   |
+| `borderRadius`  | BorderRadius     | The border radius of the button.                                                  | BorderRadius.all(Radius.circular(100)) |
+| `border`        | Border           | The border of the button.                                                         | null                                   |
+| `onTap`         | void Function()? | The function that is called when the button is tapped.                            | null                                   |
+| `onDoubleTap`   | void Function()? | The function that is called when the button is double tapped.                     | null                                   |
+| `onLongPress`   | void Function()? | The function that is called when the button is long pressed.                      | null                                   | **** |
 
 ## Usage
 
-To use this widget, simply import it and use it in your widget tree. You can customize its appearance and behavior using its parameters.
+To use this widget, simply import it and use it in your widget tree. You can customize its appearance and behavior using its properties.
 
 ```dart
 VWButton(
-  fullWidth: true,
-  label: 'Click Me',
-  color: Colors.blue,
-  gradient: null,
-  splashColor: Colors.white,
+  splashColor: Colors.blue,
   labelStyle: TextStyle(color: Colors.white),
   leftIcon: Icons.add,
   leftIconSize: 24,
   rightIcon: Icons.arrow_forward,
   rightIconSize: 24,
+  isLoading: false,
+  loadingLabel: 'Loading...',
+  borderRadius: BorderRadius.circular(8),
+  border: Border.all(color: Colors.blue),
+  onTap: () {
+    print('Button tapped!');
+  },
 )
-```
