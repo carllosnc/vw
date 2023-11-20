@@ -17,3 +17,4 @@ jobs:
         flutter-version: '3.13.9'
     - run: flutter pub get
     - run: flutter test
+    - run: flutter analyze
