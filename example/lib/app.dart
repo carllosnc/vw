@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './examples/vw_row_example.dart';
 import './examples/vw_column_example.dart';
+import './examples/vw_button_example.dart';
 
 import 'home.dart';
 
@@ -18,6 +19,7 @@ class App extends StatelessWidget {
       routes: {
         '/vw_row': (context) => const VWRowExamplePage(),
         '/vw_column': (context) => const VWColumnExamplePage(),
+        '/vw_button': (context) => const VWButtonExample(),
       },
     );
   }
