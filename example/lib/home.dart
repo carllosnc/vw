@@ -14,15 +14,21 @@ class Home extends StatelessWidget {
       body: ListView(
         children: [
           ListTile(
-            title: const Text('VWRow'),
+            title: const Text('VW Row'),
             onTap: () {
               Navigator.pushNamed(context, '/vw_row');
             },
           ),
           ListTile(
-            title: const Text('VWColumn'),
+            title: const Text('VW Column'),
             onTap: () {
               Navigator.pushNamed(context, '/vw_column');
+            },
+          ),
+          ListTile(
+            title: const Text('VW Button'),
+            onTap: () {
+              Navigator.pushNamed(context, '/vw_button');
             },
           ),
         ],
