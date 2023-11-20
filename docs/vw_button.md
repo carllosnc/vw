@@ -4,25 +4,25 @@
 
 ## Properties
 
-| Property        | Type             | Description                                                                       | Default Value                          |
-| --------------- | ---------------- | --------------------------------------------------------------------------------- | -------------------------------------- |
-| `fullWidth`     | bool             | Determines whether the button should take up the full width of the parent widget. | false                                  |
-| `label`         | String           | The text that is displayed on the button.                                         | 'Button'                               |
-| `color`         | Color            | The background color of the button.                                               | null                                   |
-| `gradient`      | Gradient         | The gradient of the button.                                                       | null                                   |
-| `splashColor`   | Color            | The splash color of the button.                                                   | Colors.white                           |
-| `labelStyle`    | TextStyle        | The style of the label text.                                                      | null                                   |
-| `leftIcon`      | IconData         | The icon that is displayed on the left side of the label.                         | null                                   |
-| `leftIconSize`  | double           | The size of the left icon.                                                        | null                                   |
-| `rightIcon`     | IconData         | The icon that is displayed on the right side of the label.                        | null                                   |
-| `rightIconSize` | double           | The size of the right icon.                                                       | null                                   |
-| `isLoading`     | bool             | Determines whether the button should display a loading indicator.                 | false                                  |
-| `loadingLabel`  | String           | The text that is displayed when the button is loading.                            | null                                   |
-| `borderRadius`  | BorderRadius     | The border radius of the button.                                                  | BorderRadius.all(Radius.circular(100)) |
-| `border`        | Border           | The border of the button.                                                         | null                                   |
-| `onTap`         | void Function()? | The function that is called when the button is tapped.                            | null                                   |
-| `onDoubleTap`   | void Function()? | The function that is called when the button is double tapped.                     | null                                   |
-| `onLongPress`   | void Function()? | The function that is called when the button is long pressed.                      | null                                   | **** |
+| Property        | Type             | Description                                                                       | Default Value                            |
+| --------------- | ---------------- | --------------------------------------------------------------------------------- | ---------------------------------------- |
+| `fullWidth`     | bool             | Determines whether the button should take up the full width of the parent widget. | `false`                                  |
+| `label`         | String           | The text that is displayed on the button.                                         | `'Button'`                               |
+| `color`         | Color            | The background color of the button.                                               | `Theme.of(context).colorScheme.primary`  |
+| `gradient`      | Gradient         | The gradient of the button.                                                       | `null`                                   |
+| `splashColor`   | Color            | The splash color of the button.                                                   | `Colors.white`                           |
+| `labelStyle`    | TextStyle        | The style of the label text.                                                      | `null`                                   |
+| `leftIcon`      | IconData         | The icon that is displayed on the left side of the label.                         | `null`                                   |
+| `leftIconSize`  | double           | The size of the left icon.                                                        | `null`                                   |
+| `rightIcon`     | IconData         | The icon that is displayed on the right side of the label.                        | `null`                                   |
+| `rightIconSize` | double           | The size of the right icon.                                                       | `null`                                   |
+| `isLoading`     | bool             | Determines whether the button should display a loading indicator.                 | `false`                                  |
+| `loadingLabel`  | String           | The text that is displayed when the button is loading.                            | `null`                                   |
+| `borderRadius`  | BorderRadius     | The border radius of the button.                                                  | `BorderRadius.all(Radius.circular(100))` |
+| `border`        | Border           | The border of the button.                                                         | `null`                                   |
+| `onTap`         | void Function()? | The function that is called when the button is tapped.                            | `null`                                   |
+| `onDoubleTap`   | void Function()? | The function that is called when the button is double tapped.                     | `null`                                   |
+| `onLongPress`   | void Function()? | The function that is called when the button is long pressed.                      | `null`                                   |
 
 ## Usage
 

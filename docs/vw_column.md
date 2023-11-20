@@ -4,12 +4,14 @@
 
 ## Parameters
 
-- `children`: A list of widgets to display in the column. Default is an empty list.
-- `gap`: The gap between the widgets. Default is 0.
-- `padding`: The padding around the column. Default is EdgeInsets.all(0).
-- `margin`: The margin around the column. Default is EdgeInsets.all(0).
-- `horizontalAlignment`: The horizontal alignment of the widgets in the column. Default is CrossAxisAlignment.start.
-- `verticalAlignment`: The vertical alignment of the widgets in the column. Default is MainAxisAlignment.start.
+| Property              | Type               | Description                                            | Default                    |
+| --------------------- | ------------------ | ------------------------------------------------------ | -------------------------- |
+| `children`            | List<Widget>       | The widgets to display in the column.                  | `[]`                       |
+| `gap`                 | double             | The gap between the widgets in the column.             | `0`                        |
+| `padding`             | EdgeInsetsGeometry | The padding around the column.                         | `EdgeInsets.all(0)`        |
+| `margin`              | EdgeInsetsGeometry | The margin around the column.                          | `EdgeInsets.all(0)`        |
+| `horizontalAlignment` | CrossAxisAlignment | The horizontal alignment of the widgets in the column. | `CrossAxisAlignment.start` |
+| `verticalAlignment`   | MainAxisAlignment  | The vertical alignment of the widgets in the column.   | `MainAxisAlignment.start`  |
 
 ## Usage
 
@@ -17,7 +19,7 @@ To use this widget, simply import it and use it in your widget tree. You can cus
 
 ```dart
 VWColumn(
-  children: <Widget>[
+  children: [
     Text('Item 1'),
     Text('Item 2'),
     Text('Item 3'),
