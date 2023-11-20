@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import './vw_row.dart';
 
-///[VWButton] is a button widget that is used to display a button.
 class VWButton extends StatefulWidget {
   ///[fullWidth] is a boolean value that determines whether the button
   ///should take up the full width of the parent widget.
