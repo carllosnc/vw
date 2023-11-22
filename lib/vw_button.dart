@@ -103,6 +103,9 @@ class _VWButtonState extends State<VWButton> {
     var iconColor = buttonColor.computeLuminance() > 0.5 ? Colors.black : Colors.white;
     var label = loadingLabelCondition ? widget.loadingLabel!.toUpperCase() : widget.label.toUpperCase();
 
+    //circular indicator color
+    var circularIndicatorColor = buttonColor.computeLuminance() > 0.5 ? Colors.black : Colors.white;
+
     return Expanded(
       key: const Key("vw_button_expanded"),
       flex: widget.fullWidth ? 1 : 0,
@@ -142,9 +145,9 @@ class _VWButtonState extends State<VWButton> {
                       width: 14,
                       height: 14,
                       margin: const EdgeInsets.symmetric(vertical: 1.5),
-                      child: const CircularProgressIndicator(
+                      child: CircularProgressIndicator(
                         strokeWidth: 2,
-                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                        valueColor: AlwaysStoppedAnimation<Color>(circularIndicatorColor),
                       ),
                     ),
                   if (leftIconCondition)
