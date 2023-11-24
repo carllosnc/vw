@@ -132,7 +132,7 @@ class _VWButtonState extends State<VWButton> {
               key: const Key("vw_button_sub-container"),
               padding: const EdgeInsets.symmetric(
                 horizontal: 30,
-                vertical: 12,
+                vertical: 10,
               ),
               child: VWRow(
                 horizontalAlignment: MainAxisAlignment.center,
