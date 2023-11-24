@@ -36,6 +36,8 @@ class VWRow extends StatelessWidget {
   ///[controller] A ScrollController that controls the position of the scroll. Default is null.
   final ScrollController? controller;
 
+  ///! Note: If [scrollable] is true, [expandItems] must be false.
+
   const VWRow({
     super.key,
     this.children = const [],
