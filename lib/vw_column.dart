@@ -1,11 +1,22 @@
 import 'package:flutter/widgets.dart';
 
 class VWColumn extends StatelessWidget {
+  /// [children] is a list of widgets that are displayed in the column.
   final List<Widget> children;
+
+  /// [gap] is the space between each child widget.
   final double gap;
+
+  /// [padding] is the padding of the column.
   final EdgeInsetsGeometry padding;
+
+  /// [margin] is the margin of the column.
   final EdgeInsetsGeometry margin;
+
+  /// [horizontalAlignment] is the horizontal alignment of the column.
   final CrossAxisAlignment horizontalAlignment;
+
+  /// [verticalAlignment] is the vertical alignment of the column.
   final MainAxisAlignment verticalAlignment;
 
   const VWColumn({
