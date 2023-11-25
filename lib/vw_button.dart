@@ -83,7 +83,10 @@ class VWButton extends StatefulWidget {
 class _VWButtonState extends State<VWButton> {
   @override
   Widget build(BuildContext context) {
-    Color buttonColor = widget.color ?? Theme.of(context).colorScheme.primary;
+    var isDarkTheme = Theme.of(context).brightness == Brightness.dark;
+    var defaultButtonColor = isDarkTheme ? Theme.of(context).colorScheme.secondaryContainer : Theme.of(context).colorScheme.primary;
+
+    Color buttonColor = widget.color ?? defaultButtonColor;
 
     var defaultLabelStyle = TextStyle(
       color: buttonColor.computeLuminance() > 0.5 ? Colors.black : Colors.white,
