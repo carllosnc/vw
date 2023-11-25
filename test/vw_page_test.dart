@@ -15,11 +15,11 @@ void main() {
                   onPressed: () {
                     VWPage.open(
                       appBar: AppBar(
-                        title: const Text('VW Page'),
+                        title: const Text('VW Page header'),
                       ),
                       context: context,
                       body: const Center(
-                        child: Text('VW Page'),
+                        child: Text('VW Page body'),
                       ),
                     );
                   },
@@ -32,6 +32,11 @@ void main() {
       );
 
       await tester.tap(find.text('Button'));
+
+      await tester.pumpAndSettle();
+
+      expect(find.text('VW Page header'), findsOneWidget);
+      expect(find.text('VW Page body'), findsOneWidget);
     },
   );
 }
