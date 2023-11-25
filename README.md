@@ -14,6 +14,8 @@ alignment options.
 
 - [VWColum](https://github.com/C4co/vw/blob/master/docs/vw_row.md): Similar to VWRow, but for column layout.
 
+- [VWColum](https://github.com/C4co/vw/blob/master/docs/vw_page.md): A floating page that floats above the current page.
+
 ---
 
 Carlos Costa @ 2023
