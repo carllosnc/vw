@@ -55,6 +55,8 @@ class VWButton extends StatefulWidget {
   ///[onLongPress] is the function that is called when the button is long pressed.
   final void Function()? onLongPress;
 
+  final MainAxisAlignment? horizontalAlignment;
+
   const VWButton({
     super.key,
     this.fullWidth = false,
@@ -74,6 +76,7 @@ class VWButton extends StatefulWidget {
     this.onTap,
     this.onDoubleTap,
     this.onLongPress,
+    this.horizontalAlignment,
   });
 
   @override
@@ -90,8 +93,8 @@ class _VWButtonState extends State<VWButton> {
 
     var defaultLabelStyle = TextStyle(
       color: buttonColor.computeLuminance() > 0.5 ? Colors.black : Colors.white,
-      fontSize: 12,
-      fontWeight: FontWeight.bold,
+      fontSize: 15,
+      fontWeight: FontWeight.w500,
     );
 
     var labelStyle = defaultLabelStyle.merge(widget.labelStyle);
@@ -104,7 +107,7 @@ class _VWButtonState extends State<VWButton> {
     //values
     var splashColor = widget.isLoading == true ? Colors.transparent : widget.splashColor.withOpacity(0.1);
     var iconColor = buttonColor.computeLuminance() > 0.5 ? Colors.black : Colors.white;
-    var label = loadingLabelCondition ? widget.loadingLabel!.toUpperCase() : widget.label.toUpperCase();
+    var label = loadingLabelCondition ? widget.loadingLabel! : widget.label;
 
     //circular indicator color
     var circularIndicatorColor = buttonColor.computeLuminance() > 0.5 ? Colors.black : Colors.white;
@@ -135,10 +138,10 @@ class _VWButtonState extends State<VWButton> {
               key: const Key("vw_button_sub-container"),
               padding: const EdgeInsets.symmetric(
                 horizontal: 30,
-                vertical: 10,
+                vertical: 9,
               ),
               child: VWRow(
-                horizontalAlignment: MainAxisAlignment.center,
+                horizontalAlignment: widget.horizontalAlignment ?? MainAxisAlignment.center,
                 verticalAlignment: CrossAxisAlignment.center,
                 gap: 10,
                 children: [
@@ -158,7 +161,7 @@ class _VWButtonState extends State<VWButton> {
                       key: const Key("vw_button_left_icon"),
                       widget.leftIcon,
                       color: iconColor,
-                      size: widget.leftIconSize ?? 14,
+                      size: widget.leftIconSize ?? 17,
                     ),
                   if (label.isNotEmpty)
                     Text(
@@ -173,7 +176,7 @@ class _VWButtonState extends State<VWButton> {
                       key: const Key("vw_button_right_icon"),
                       widget.rightIcon,
                       color: iconColor,
-                      size: widget.rightIconSize ?? 14,
+                      size: widget.rightIconSize ?? 17,
                     ),
                 ],
               ),
