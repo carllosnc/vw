@@ -55,6 +55,7 @@ class VWButton extends StatefulWidget {
   ///[onLongPress] is the function that is called when the button is long pressed.
   final void Function()? onLongPress;
 
+  ///[horizontalAlignment] is the horizontal alignment of the button.
   final MainAxisAlignment? horizontalAlignment;
 
   const VWButton({
@@ -94,7 +95,7 @@ class _VWButtonState extends State<VWButton> {
     var defaultLabelStyle = TextStyle(
       color: buttonColor.computeLuminance() > 0.5 ? Colors.black : Colors.white,
       fontSize: 15,
-      fontWeight: FontWeight.w500,
+      fontWeight: FontWeight.w400,
     );
 
     var labelStyle = defaultLabelStyle.merge(widget.labelStyle);
