@@ -172,6 +172,7 @@ class _VWButtonExampleState extends State<VWButtonExample> {
 
           VWRow(
             gap: 10,
+            verticalAlignment: CrossAxisAlignment.center,
             children: [
               VWButton(
                 onTap: () => debugPrint("Button tapped!"),
@@ -179,7 +180,40 @@ class _VWButtonExampleState extends State<VWButtonExample> {
                 fullWidth: true,
               ),
             ],
-          )
+          ),
+
+          VWRow(
+            gap: 10,
+            verticalAlignment: CrossAxisAlignment.center,
+            children: [
+              VWButton(
+                onDoubleTap: () => debugPrint("Button double tapped!"),
+                label: "Align left",
+                fullWidth: true,
+                horizontalAlignment: MainAxisAlignment.start,
+              ),
+              VWButton(
+                onDoubleTap: () => debugPrint("Button double tapped!"),
+                label: "Align left",
+                fullWidth: true,
+                horizontalAlignment: MainAxisAlignment.end,
+              ),
+            ],
+          ),
+
+          VWRow(
+            gap: 10,
+            verticalAlignment: CrossAxisAlignment.center,
+            children: [
+              VWButton(
+                onDoubleTap: () => debugPrint("Button double tapped!"),
+                label: "Align left",
+                fullWidth: true,
+                leftIcon: Icons.favorite,
+                horizontalAlignment: MainAxisAlignment.spaceBetween,
+              ),
+            ],
+          ),
         ],
       ),
     );
