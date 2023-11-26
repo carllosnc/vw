@@ -135,6 +135,10 @@ class _VWPageExampleState extends State<VWPageExample> {
                   ],
                 ),
               ),
+              bottomBar: Container(
+                height: 50,
+                color: Colors.red,
+              ),
             );
           },
           child: const Text('Open VW Page'),

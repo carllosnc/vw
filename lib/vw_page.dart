@@ -8,6 +8,9 @@ sealed class VWPage {
     ///[context] is the BuildContext of the page.
     required BuildContext context,
 
+    ///[bottomBar] is the bottom bar of the page.
+    Widget? bottomBar,
+
     ///[body] is the body of the page.
     required Widget body,
   }) {
@@ -20,6 +23,7 @@ sealed class VWPage {
           child: Scaffold(
             appBar: appBar,
             body: body,
+            bottomNavigationBar: bottomBar,
           ),
         );
       },

@@ -21,6 +21,13 @@ void main() {
                       body: const Center(
                         child: Text('VW Page body'),
                       ),
+                      bottomBar: Container(
+                        height: 50,
+                        color: Colors.red,
+                        child: const Center(
+                          child: Text('VW Page bottom bar'),
+                        ),
+                      ),
                     );
                   },
                   child: const Text('Button'),
@@ -37,6 +44,7 @@ void main() {
 
       expect(find.text('VW Page header'), findsOneWidget);
       expect(find.text('VW Page body'), findsOneWidget);
+      expect(find.text('VW Page bottom bar'), findsOneWidget);
     },
   );
 }
