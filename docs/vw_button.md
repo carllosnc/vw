@@ -45,3 +45,30 @@ VWButton(
     print('Button tapped!');
   },
 )
+```
+
+## Known Issues
+
+> [!WARNING]
+> When `VWButton` is used inside a `bottomNavigationBar` of `Scaffold` this error is thrown:
+
+```
+The ParentDataWidget Expanded-[<'vw_button_expanded'>](flex: 1) wants to apply ParentData of type FlexParentData to a RenderObject, which has been set up to accept ParentData of incompatible type ParentData.
+```
+
+To fix this use a `VWRow` as main wrapper to the `VWButton`.
+
+```dart
+Scaffold(
+  appBar: AppBar(
+    title: const Text('VW Buttons'),
+  ),
+  bottomNavigationBar: const VWRow(
+    children: [
+      VWButton(
+        label: "Button",
+      ),
+    ],
+  ),
+)
+```
