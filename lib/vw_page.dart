@@ -13,13 +13,23 @@ sealed class VWPage {
 
     ///[body] is the body of the page.
     required Widget body,
+
+    ///[borderRadius] is the border radius of top left and top right of the page.
+    double borderRadius = 15,
   }) {
     return showModalBottomSheet(
       useSafeArea: true,
       isScrollControlled: true,
       context: context,
       builder: (context) {
-        return SizedBox(
+        return Container(
+          clipBehavior: Clip.hardEdge,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(borderRadius),
+              topRight: Radius.circular(borderRadius),
+            ),
+          ),
           child: Scaffold(
             appBar: appBar,
             body: body,
