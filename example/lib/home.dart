@@ -37,6 +37,12 @@ class Home extends StatelessWidget {
               Navigator.pushNamed(context, '/vw_page');
             },
           ),
+          ListTile(
+            title: const Text('VW Timepicker'),
+            onTap: () {
+              Navigator.pushNamed(context, '/vw_timepicker');
+            },
+          ),
         ],
       ),
     );
