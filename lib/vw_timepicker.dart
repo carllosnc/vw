@@ -1,20 +1,44 @@
 import 'package:flutter/material.dart';
 
 class VWTimePicker extends StatefulWidget {
-  //textfield
+  // TEXT FIELD
+
+  /// The [OnChanged] callback, Called when the user changes the time
   final Function(TimeOfDay) onChanged;
+
+  /// The [validator] will be called when the user submits the form.
   final String? Function(String?)? validator;
+
+  /// The [decoration] to show around the text field.
   final InputDecoration? decoration;
 
-  //time picker
+  // TIME PICKER
+
+  /// The [orientation] of the time picker.
   final Orientation orientation;
+
+  /// The [helpText] to show in the time picker.
   final String helpText;
+
+  /// The [anchorPoint] to show in the time picker.
   final Offset? anchorPoint;
+
+  /// The [cancelText] to show in the time picker.
   final String cancelText;
+
+  /// The [confirmText] to show in the time picker.
   final String confirmText;
+
+  /// The [errorInvalidText] to show in the time picker.
   final String errorInvalidText;
+
+  /// The [hourLabelText] to show in the time picker.
   final String hourLabelText;
+
+  /// The [minuteLabelText] to show in the time picker.
   final String minuteLabelText;
+
+  /// The [builder] to show in the time picker.
   final Widget Function(BuildContext, Widget?)? builder;
 
   const VWTimePicker({
