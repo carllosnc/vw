@@ -28,6 +28,8 @@ alignment options.
 
 - [VWPage](https://github.com/C4co/vw/blob/master/docs/vw_page.md): A floating page that floats above the current page.
 
+- [VWTimePicker](https://github.com/C4co/vw/blob/master/docs/vw_timepicker.md): A time picker widget based on text field.
+
 ---
 
 Carlos Costa @ 2023
