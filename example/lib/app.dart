@@ -3,6 +3,7 @@ import './examples/vw_row_example.dart';
 import './examples/vw_column_example.dart';
 import './examples/vw_button_example.dart';
 import './examples/vw_page_example.dart';
+import './examples/vw_timepicker_example.dart';
 
 import 'home.dart';
 
@@ -25,14 +26,12 @@ class App extends StatelessWidget {
         brightness: Brightness.light,
         useMaterial3: true,
         colorSchemeSeed: Colors.red,
-        //set bottom sheet animation
         pageTransitionsTheme: pageTransition,
       ),
       darkTheme: ThemeData(
         brightness: Brightness.light,
         useMaterial3: true,
         colorSchemeSeed: Colors.red,
-        //set bottom sheet animation
         pageTransitionsTheme: pageTransition,
       ),
       routes: {
@@ -40,6 +39,7 @@ class App extends StatelessWidget {
         '/vw_column': (context) => const VWColumnExamplePage(),
         '/vw_button': (context) => const VWButtonExample(),
         '/vw_page': (context) => const VWPageExample(),
+        '/vw_timepicker': (context) => const VWTimepickerExample(),
       },
     );
   }
