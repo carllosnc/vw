@@ -4,6 +4,7 @@ import './examples/vw_column_example.dart';
 import './examples/vw_button_example.dart';
 import './examples/vw_page_example.dart';
 import './examples/vw_timepicker_example.dart';
+import './examples/vw_select_example.dart';
 
 import 'home.dart';
 
@@ -29,7 +30,7 @@ class App extends StatelessWidget {
         pageTransitionsTheme: pageTransition,
       ),
       darkTheme: ThemeData(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         useMaterial3: true,
         colorSchemeSeed: Colors.red,
         pageTransitionsTheme: pageTransition,
@@ -40,6 +41,7 @@ class App extends StatelessWidget {
         '/vw_button': (context) => const VWButtonExample(),
         '/vw_page': (context) => const VWPageExample(),
         '/vw_timepicker': (context) => const VWTimepickerExample(),
+        '/vw_select': (context) => const VWSelectExample(),
       },
     );
   }
