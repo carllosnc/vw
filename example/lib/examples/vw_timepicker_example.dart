@@ -28,6 +28,7 @@ class VWTimepickerExample extends StatelessWidget {
               },
               decoration: const InputDecoration(
                 labelText: 'Select time',
+                suffixIcon: Icon(Icons.access_time),
               ),
             ),
           ],
