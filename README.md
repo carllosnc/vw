@@ -30,6 +30,8 @@ alignment options.
 
 - [VWTimePicker](https://github.com/C4co/vw/blob/master/docs/vw_timepicker.md): A time picker widget based on text field.
 
+- [VWSelect](https://github.com/C4co/vw/blob/master/docs/vw_select.md): A select widget based on text field and bottom sheet.
+
 ---
 
 Carlos Costa @ 2023
