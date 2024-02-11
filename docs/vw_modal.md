@@ -10,6 +10,13 @@
 | `body`         | `Widget`       | The body of the dialog.                                    |
 | `insetPadding` | `EdgeInsets`   | The padding of the dialog. Defaults to EdgeInsets.all(30). |
 
+## Methods
+
+| Method            | Description                     |
+| ----------------- | ------------------------------- |
+| `VWModal.open()`  | Opens the modal on the screen.  |
+| `VWModal.close()` | Closes the modal on the screen. |
+
 ## Usage
 
 ```dart
