@@ -5,6 +5,7 @@ import './examples/vw_button_example.dart';
 import './examples/vw_page_example.dart';
 import './examples/vw_timepicker_example.dart';
 import './examples/vw_select_example.dart';
+import 'examples/vw_modal_example.dart';
 
 import 'home.dart';
 
@@ -42,6 +43,7 @@ class App extends StatelessWidget {
         '/vw_page': (context) => const VWPageExample(),
         '/vw_timepicker': (context) => const VWTimepickerExample(),
         '/vw_select': (context) => const VWSelectExample(),
+        '/vw_modal': (context) => const VWModalExample(),
       },
     );
   }
