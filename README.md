@@ -32,6 +32,8 @@ alignment options.
 
 - [VWSelect](https://github.com/C4co/vw/blob/master/docs/vw_select.md): A select widget based on text field and bottom sheet.
 
+- [VWModal](https://github.com/C4co/vw/blob/master/docs/vw_modal.md): A modal component that can be used to display a modal on the screen.
+
 ---
 
 Carlos Costa @ 2023
