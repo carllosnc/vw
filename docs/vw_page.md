@@ -10,11 +10,12 @@ VWPage is a floating page, which means that it is not a full-screen page, but a 
 
 ### open method
 
-| Parameter | Type         | Description                   |
-| --------- | ------------ | ----------------------------- |
-| `appBar`  | AppBar       | The header of the page.       |
-| `context` | BuildContext | The BuildContext of the page. |
-| `body`    | Widget       | The body of the page.         |
+| Parameter | Type         | Description                                                                           |
+| --------- | ------------ | ------------------------------------------------------------------------------------- |
+| `appBar`  | AppBar       | The header of the page.                                                               |
+| `context` | BuildContext | The BuildContext of the page.                                                         |
+| `body`    | Widget       | The body of the page.                                                                 |
+| `level`   | int          | define page height based on the level, can be used when have `VMPage` inside `VMPage` |
 
 Returns a `Future<dynamic>` that completes when the bottom sheet is dismissed.
 
@@ -36,3 +37,54 @@ FilledButton(
   }
 )
 ```
+
+Multi-level page example:
+
+```dart
+FilledButton(
+  child: const Text('Open first page'),
+  onPressed: () {
+    VWPage.open(
+      level: 1,
+      context: context,
+      appBar: AppBar(
+        title: const Text('First page'),
+        actions: [
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: const Text('first back'),
+          )
+        ],
+      ),
+      body: Center(
+        child: FilledButton(
+          child: const Text('open second page'),
+          onPressed: () {
+            VWPage.open(
+              level: 2,
+              context: context,
+              appBar: AppBar(
+                title: const Text('Second page'),
+                actions: [
+                  TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: const Text('second back'),
+                  )
+                ],
+              ),
+              body: const Center(
+                child: Text('End'),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  },
+)
+```
+
