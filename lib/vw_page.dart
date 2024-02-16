@@ -16,6 +16,9 @@ sealed class VWPage {
 
     ///[borderRadius] is the border radius of top left and top right of the page.
     double borderRadius = 15,
+
+    ///[level] defined page length based on the level, too higher the leve the lower the height of the page.
+    int level = 1,
   }) {
     return showModalBottomSheet(
       useSafeArea: true,
@@ -23,6 +26,7 @@ sealed class VWPage {
       context: context,
       builder: (context) {
         return Container(
+          height: MediaQuery.of(context).size.height * 0.96 - (15 * level),
           clipBehavior: Clip.hardEdge,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
