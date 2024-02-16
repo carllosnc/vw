@@ -17,7 +17,7 @@ sealed class VWPage {
     ///[borderRadius] is the border radius of top left and top right of the page.
     double borderRadius = 15,
 
-    ///[level] defined page length based on the level, too higher the leve the lower the height of the page.
+    ///[level] define page height based on the level, to higher the level the lower the height of the page.
     int level = 1,
   }) {
     return showModalBottomSheet(
