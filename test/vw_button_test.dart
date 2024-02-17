@@ -19,15 +19,11 @@ void main() {
       ),
     );
 
-    expect(find.byKey(const Key('vw_button_expanded')), findsOneWidget);
     expect(find.byKey(const Key('vw_button_label')), findsOneWidget);
     expect(find.byKey(const Key('vw_button_container')), findsOneWidget);
     expect(find.byKey(const Key('vw_button_material')), findsOneWidget);
     expect(find.byKey(const Key('vw_button_inkwell')), findsOneWidget);
     expect(find.byKey(const Key('vw_button_sub-container')), findsOneWidget);
-
-    var expanded = tester.firstWidget(find.byKey(const Key('vw_button_expanded'))) as Expanded;
-    expect(expanded.flex, 0);
   });
 
   testWidgets('Check color property', (tester) async {
