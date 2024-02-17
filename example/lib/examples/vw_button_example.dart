@@ -15,12 +15,11 @@ class _VWButtonExampleState extends State<VWButtonExample> {
       appBar: AppBar(
         title: const Text('VW Buttons'),
       ),
-      bottomNavigationBar: const VWRow(
-        children: [
-          VWButton(
-            label: "Button",
-          ),
-        ],
+      bottomNavigationBar: const Padding(
+        padding: EdgeInsets.all(8.0),
+        child: VWButton(
+          label: "Button",
+        ),
       ),
       body: SingleChildScrollView(
         child: VWColumn(
@@ -59,7 +58,6 @@ class _VWButtonExampleState extends State<VWButtonExample> {
                 VWButton(
                   label: "Full width",
                   color: Colors.red,
-                  fullWidth: true,
                 ),
               ],
             ),
@@ -70,7 +68,6 @@ class _VWButtonExampleState extends State<VWButtonExample> {
                   label: "Light button",
                   color: Colors.grey.shade300,
                   splashColor: Colors.black,
-                  fullWidth: true,
                 ),
               ],
             ),
@@ -81,7 +78,6 @@ class _VWButtonExampleState extends State<VWButtonExample> {
                 VWButton(
                   label: "Dark button",
                   color: Colors.grey.shade800,
-                  fullWidth: true,
                 ),
               ],
             ),
@@ -90,7 +86,6 @@ class _VWButtonExampleState extends State<VWButtonExample> {
               children: [
                 VWButton(
                   label: "Full width",
-                  fullWidth: true,
                   labelStyle: TextStyle(
                     color: Colors.black,
                     fontWeight: FontWeight.w900,
@@ -110,12 +105,10 @@ class _VWButtonExampleState extends State<VWButtonExample> {
               children: [
                 VWButton(
                   label: "Loading",
-                  fullWidth: true,
                   isLoading: true,
                 ),
                 VWButton(
                   label: "",
-                  fullWidth: true,
                   isLoading: true,
                 ),
               ],
@@ -125,13 +118,11 @@ class _VWButtonExampleState extends State<VWButtonExample> {
               children: [
                 VWButton(
                   label: "Left icon",
-                  fullWidth: true,
                   loadingLabel: "Loading",
                   leftIcon: Icons.favorite,
                 ),
                 VWButton(
                   label: "Right icon",
-                  fullWidth: true,
                   loadingLabel: "Loading",
                   rightIcon: Icons.favorite,
                 ),
@@ -142,7 +133,6 @@ class _VWButtonExampleState extends State<VWButtonExample> {
               children: [
                 VWButton(
                   label: "Right icon",
-                  fullWidth: true,
                   loadingLabel: "Loading",
                   rightIcon: Icons.favorite,
                   leftIcon: Icons.favorite,
@@ -154,7 +144,6 @@ class _VWButtonExampleState extends State<VWButtonExample> {
               children: [
                 VWButton(
                   label: "Gradient",
-                  fullWidth: true,
                   loadingLabel: "Outlined button",
                   color: Colors.white,
                   splashColor: Colors.black,
@@ -171,7 +160,6 @@ class _VWButtonExampleState extends State<VWButtonExample> {
               children: [
                 VWButton(
                   label: "Gradient",
-                  fullWidth: true,
                   borderRadius: BorderRadius.all(
                     Radius.circular(5),
                   ),
@@ -186,7 +174,6 @@ class _VWButtonExampleState extends State<VWButtonExample> {
                 VWButton(
                   onTap: () => debugPrint("Button tapped!"),
                   label: "On tap",
-                  fullWidth: true,
                 ),
               ],
             ),
@@ -198,13 +185,11 @@ class _VWButtonExampleState extends State<VWButtonExample> {
                 VWButton(
                   onDoubleTap: () => debugPrint("Button double tapped!"),
                   label: "Align left",
-                  fullWidth: true,
                   horizontalAlignment: MainAxisAlignment.start,
                 ),
                 VWButton(
                   onDoubleTap: () => debugPrint("Button double tapped!"),
                   label: "Align left",
-                  fullWidth: true,
                   horizontalAlignment: MainAxisAlignment.end,
                 ),
               ],
@@ -217,7 +202,6 @@ class _VWButtonExampleState extends State<VWButtonExample> {
                 VWButton(
                   onDoubleTap: () => debugPrint("Button double tapped!"),
                   label: "Align left",
-                  fullWidth: true,
                   leftIcon: Icons.favorite,
                   horizontalAlignment: MainAxisAlignment.spaceBetween,
                 ),

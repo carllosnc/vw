@@ -30,27 +30,6 @@ void main() {
     expect(expanded.flex, 0);
   });
 
-  testWidgets('Check fullwidth property', (tester) async {
-    await tester.pumpWidget(
-      MaterialApp(
-        home: Scaffold(
-          body: VWColumn(
-            children: [
-              VWButton(
-                label: 'Button',
-                onTap: () {},
-                fullWidth: true,
-              )
-            ],
-          ),
-        ),
-      ),
-    );
-
-    var expanded = tester.firstWidget(find.byKey(const Key('vw_button_expanded'))) as Expanded;
-    expect(expanded.flex, 1);
-  });
-
   testWidgets('Check color property', (tester) async {
     await tester.pumpWidget(
       MaterialApp(

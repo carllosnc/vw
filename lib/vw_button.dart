@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import './vw_row.dart';
 
 class VWButton extends StatefulWidget {
-  ///[fullWidth] is a boolean value that determines whether the button
-  ///should take up the full width of the parent widget.
-  final bool fullWidth;
-
   ///[label] is the text that is displayed on the button.
   final String label;
 
@@ -60,7 +56,6 @@ class VWButton extends StatefulWidget {
 
   const VWButton({
     super.key,
-    this.fullWidth = false,
     this.label = 'Button',
     this.color,
     this.gradient,
@@ -113,74 +108,70 @@ class _VWButtonState extends State<VWButton> {
     //circular indicator color
     var circularIndicatorColor = buttonColor.computeLuminance() > 0.5 ? Colors.black : Colors.white;
 
-    return Expanded(
-      key: const Key("vw_button_expanded"),
-      flex: widget.fullWidth ? 1 : 0,
-      child: Container(
-        key: const Key("vw_button_container"),
-        clipBehavior: Clip.antiAlias,
-        decoration: BoxDecoration(
-          color: buttonColor,
-          borderRadius: widget.borderRadius,
-          gradient: widget.gradient,
-          border: widget.border,
-        ),
-        child: Material(
-          key: const Key("vw_button_material"),
-          type: MaterialType.button,
-          color: Colors.transparent,
-          child: InkWell(
-            key: const Key("vw_button_inkwell"),
-            onTap: widget.onTap,
-            onDoubleTap: widget.onDoubleTap,
-            onLongPress: widget.onLongPress,
-            splashColor: splashColor,
-            child: Container(
-              key: const Key("vw_button_sub-container"),
-              padding: const EdgeInsets.symmetric(
-                horizontal: 30,
-                vertical: 9,
-              ),
-              child: VWRow(
-                horizontalAlignment: widget.horizontalAlignment ?? MainAxisAlignment.center,
-                verticalAlignment: CrossAxisAlignment.center,
-                gap: 10,
-                children: [
-                  if (widget.isLoading == true)
-                    Container(
-                      key: const Key("vw_button_loading_indicator"),
-                      width: 14,
-                      height: 14,
-                      margin: const EdgeInsets.symmetric(vertical: 1.5),
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        valueColor: AlwaysStoppedAnimation<Color>(circularIndicatorColor),
-                      ),
+    return Container(
+      key: const Key("vw_button_container"),
+      clipBehavior: Clip.antiAlias,
+      decoration: BoxDecoration(
+        color: buttonColor,
+        borderRadius: widget.borderRadius,
+        gradient: widget.gradient,
+        border: widget.border,
+      ),
+      child: Material(
+        key: const Key("vw_button_material"),
+        type: MaterialType.button,
+        color: Colors.transparent,
+        child: InkWell(
+          key: const Key("vw_button_inkwell"),
+          onTap: widget.onTap,
+          onDoubleTap: widget.onDoubleTap,
+          onLongPress: widget.onLongPress,
+          splashColor: splashColor,
+          child: Container(
+            key: const Key("vw_button_sub-container"),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 30,
+              vertical: 9,
+            ),
+            child: VWRow(
+              horizontalAlignment: widget.horizontalAlignment ?? MainAxisAlignment.center,
+              verticalAlignment: CrossAxisAlignment.center,
+              gap: 10,
+              children: [
+                if (widget.isLoading == true)
+                  Container(
+                    key: const Key("vw_button_loading_indicator"),
+                    width: 14,
+                    height: 14,
+                    margin: const EdgeInsets.symmetric(vertical: 1.5),
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+                      valueColor: AlwaysStoppedAnimation<Color>(circularIndicatorColor),
                     ),
-                  if (leftIconCondition)
-                    Icon(
-                      key: const Key("vw_button_left_icon"),
-                      widget.leftIcon,
-                      color: iconColor,
-                      size: widget.leftIconSize ?? 17,
-                    ),
-                  if (label.isNotEmpty)
-                    Text(
-                      label,
-                      key: const Key("vw_button_label"),
-                      textAlign: TextAlign.center,
-                      textWidthBasis: TextWidthBasis.longestLine,
-                      style: labelStyle,
-                    ),
-                  if (rightIconCondition)
-                    Icon(
-                      key: const Key("vw_button_right_icon"),
-                      widget.rightIcon,
-                      color: iconColor,
-                      size: widget.rightIconSize ?? 17,
-                    ),
-                ],
-              ),
+                  ),
+                if (leftIconCondition)
+                  Icon(
+                    key: const Key("vw_button_left_icon"),
+                    widget.leftIcon,
+                    color: iconColor,
+                    size: widget.leftIconSize ?? 17,
+                  ),
+                if (label.isNotEmpty)
+                  Text(
+                    label,
+                    key: const Key("vw_button_label"),
+                    textAlign: TextAlign.center,
+                    textWidthBasis: TextWidthBasis.longestLine,
+                    style: labelStyle,
+                  ),
+                if (rightIconCondition)
+                  Icon(
+                    key: const Key("vw_button_right_icon"),
+                    widget.rightIcon,
+                    color: iconColor,
+                    size: widget.rightIconSize ?? 17,
+                  ),
+              ],
             ),
           ),
         ),
