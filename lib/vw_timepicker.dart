@@ -12,6 +12,9 @@ class VWTimePicker extends StatefulWidget {
   /// The [decoration] to show around the text field.
   final InputDecoration? decoration;
 
+  /// The [style] textstyle to decorate the text field.
+  final TextStyle? style;
+
   // TIME PICKER
 
   /// The [orientation] of the time picker.
@@ -49,6 +52,7 @@ class VWTimePicker extends StatefulWidget {
     this.orientation = Orientation.portrait,
     this.helpText = "Select time",
     this.anchorPoint,
+    this.style,
     this.cancelText = "Cancel",
     this.confirmText = "Ok",
     this.errorInvalidText = "Invalid time format",
@@ -73,6 +77,7 @@ class _VWTimePickerState extends State<VWTimePicker> {
       readOnly: true,
       validator: widget.validator,
       decoration: widget.decoration,
+      style: widget.style,
       onTap: () {
         showTimePicker(
           context: context,

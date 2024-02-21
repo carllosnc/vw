@@ -13,6 +13,7 @@ A StatefulWidget that provides a customizable time picker.
 | `cancelText`       | `String`                     | The cancel text to show in the time picker.        |
 | `confirmText`      | `String`                     | The confirm text to show in the time picker.       |
 | `errorInvalidText` | `String`                     | The error invalid text to show in the time picker. |
+| `style`            | `TextStyle`                  | Style to decorate textfield                        |
 
 Example usage:
 
