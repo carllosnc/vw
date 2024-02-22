@@ -21,13 +21,12 @@ void main() {
     expect(find.byKey(const Key('vw_timepicker_input')), findsOneWidget);
 
     await tester.tap(find.byKey(const Key('vw_timepicker_input')));
+
     await tester.pumpAndSettle();
 
     expect(find.text('Select time'), findsOneWidget);
     expect(find.text('Cancel'), findsOneWidget);
     expect(find.text('Ok'), findsOneWidget);
-    expect(find.text('Hour'), findsOneWidget);
-    expect(find.text('Minute'), findsOneWidget);
 
     await tester.tap(find.text('Ok'));
     await tester.pumpAndSettle();

@@ -15,6 +15,9 @@ class VWTimePicker extends StatefulWidget {
   /// The [style] textstyle to decorate the text field.
   final TextStyle? style;
 
+  /// The [initialValue] to show in the time picker.
+  final TimeOfDay? initialValue;
+
   // TIME PICKER
 
   /// The [orientation] of the time picker.
@@ -59,6 +62,7 @@ class VWTimePicker extends StatefulWidget {
     this.hourLabelText = "Hour",
     this.minuteLabelText = "Minute",
     this.builder,
+    this.initialValue,
   });
 
   @override
@@ -69,8 +73,19 @@ class _VWTimePickerState extends State<VWTimePicker> {
   final inputController = TextEditingController();
   TimeOfDay initialTime = TimeOfDay.now();
 
+  formatDateTime(TimeOfDay dateTime) {
+    final String hour = dateTime.hour.toString().padLeft(2, '0');
+    final String minute = dateTime.minute.toString().padLeft(2, '0');
+
+    return '$hour:$minute';
+  }
+
   @override
   Widget build(BuildContext context) {
+    if (widget.initialValue != null) {
+      inputController.text = formatDateTime(widget.initialValue!);
+    }
+
     return TextFormField(
       key: const Key('vw_timepicker_input'),
       controller: inputController,
@@ -90,17 +105,12 @@ class _VWTimePickerState extends State<VWTimePicker> {
           errorInvalidText: widget.errorInvalidText,
           hourLabelText: widget.hourLabelText,
           minuteLabelText: widget.minuteLabelText,
-          initialEntryMode: TimePickerEntryMode.input,
           builder: widget.builder,
         ).then((TimeOfDay? value) {
           if (value != null) {
             final String hour = value.hour.toString().padLeft(2, '0');
             final String minute = value.minute.toString().padLeft(2, '0');
             final String time = '$hour:$minute';
-
-            setState(() {
-              initialTime = value;
-            });
 
             inputController.text = time;
 
