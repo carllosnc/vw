@@ -73,6 +73,16 @@ class _VWTimePickerState extends State<VWTimePicker> {
   final inputController = TextEditingController();
   TimeOfDay initialTime = TimeOfDay.now();
 
+  @override
+  void initState() {
+    super.initState();
+
+    if (widget.initialValue != null) {
+      initialTime = widget.initialValue!;
+      inputController.text = formatDateTime(initialTime);
+    }
+  }
+
   formatDateTime(TimeOfDay dateTime) {
     final String hour = dateTime.hour.toString().padLeft(2, '0');
     final String minute = dateTime.minute.toString().padLeft(2, '0');
@@ -82,10 +92,6 @@ class _VWTimePickerState extends State<VWTimePicker> {
 
   @override
   Widget build(BuildContext context) {
-    if (widget.initialValue != null) {
-      inputController.text = formatDateTime(widget.initialValue!);
-    }
-
     return TextFormField(
       key: const Key('vw_timepicker_input'),
       controller: inputController,
