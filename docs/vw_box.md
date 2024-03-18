@@ -1,6 +1,6 @@
 # VWBox
 
-The `VWBox` class is a simple container with a blur effect in a Flutter application.
+The `VWBox` is a custom widget that allows you to create a box with a background image, gradient, blur effect, and shadow. It is a very flexible widget that can be used to create a variety of UI components.
 
 ## Features
 
