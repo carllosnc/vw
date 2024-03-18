@@ -34,6 +34,8 @@ alignment options.
 
 - [VWModal](https://github.com/C4co/vw/blob/master/docs/vw_modal.md): A modal component that can be used to display a modal on the screen.
 
+- [VWBox](https://github.com/C4co/vw/blob/master/docs/vw_box.md): A box with background image, gradient, blur effect, and custom border radius.
+
 ---
 
 Carlos Costa @ 2023
