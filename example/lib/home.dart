@@ -55,6 +55,12 @@ class Home extends StatelessWidget {
               Navigator.pushNamed(context, '/vw_modal');
             },
           ),
+          ListTile(
+            title: const Text('VW Box'),
+            onTap: () {
+              Navigator.pushNamed(context, '/vw_box');
+            },
+          ),
         ],
       ),
     );
