@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import './vw.dart';
 
 class VWSelectOption {
+  ///[value] The value of the option.
   final dynamic value;
+
+  ///[listTile] The ListTile widget to display in the modal.
   final ListTile listTile;
+
+  ///[displayText] The text to display in the text field when the option is selected.
   final String displayText;
 
   const VWSelectOption({
@@ -14,12 +19,25 @@ class VWSelectOption {
 }
 
 class VWSelect extends StatelessWidget {
+  ///[inputDecoration] The decoration of the text field.
   final InputDecoration? inputDecoration;
+
+  ///[options] A list of VWSelectOption objects to display in the modal.
   final List<VWSelectOption> options;
+
+  ///[onSelected] A function that is called when an option is selected.
   final Function(dynamic value) onSelected;
+
+  ///[title] The title of the modal. Default is "Select".
   final String title;
+
+  ///[titleTextStyle] The style of the title.
   final TextStyle? titleTextStyle;
+
+  ///[headerBoxDecoration] The decoration of the header.
   final BoxDecoration? headerBoxDecoration;
+
+  ///[validator] A function that validates the input. Default is null.
   final String? Function(String? value)? validator;
 
   const VWSelect({
