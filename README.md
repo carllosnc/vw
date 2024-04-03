@@ -2,6 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/Flutter_package-blue)
 [![VW](https://github.com/C4co/vw/actions/workflows/dart.yml/badge.svg)](https://github.com/C4co/vw/actions/workflows/dart.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/5d13914b855e4c24a52f5492c3691aaa)](https://app.codacy.com/gh/C4co/vw/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 > This project is a collection of custom, reusable widgets designed to provide additional functionality and customization options beyond the standard Flutter widgets.
 
