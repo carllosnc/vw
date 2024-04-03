@@ -1,6 +1,7 @@
 # VW
 
 ![Static Badge](https://img.shields.io/badge/Flutter_package-blue)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/017f43f12e1f4850816076a899a1d1ab)](https://app.codacy.com/gh/C4co/vw?utm_source=github.com&utm_medium=referral&utm_content=C4co/vw&utm_campaign=Badge_Grade)
 [![VW](https://github.com/C4co/vw/actions/workflows/dart.yml/badge.svg)](https://github.com/C4co/vw/actions/workflows/dart.yml)
 
 > This project is a collection of custom, reusable widgets designed to provide additional functionality and customization options beyond the standard Flutter widgets.
