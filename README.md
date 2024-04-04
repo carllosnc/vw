@@ -6,7 +6,6 @@
 
 > This project is a collection of custom, reusable widgets designed to provide additional functionality and customization options beyond the standard Flutter widgets.
 
-
 ### Installation
 
 Add the following to your `pubspec.yaml` file:
@@ -36,6 +35,8 @@ alignment options.
 - [VWModal](https://github.com/C4co/vw/blob/master/docs/vw_modal.md): A modal component that can be used to display a modal on the screen.
 
 - [VWBox](https://github.com/C4co/vw/blob/master/docs/vw_box.md): A box with background image, gradient, blur effect, and custom border radius.
+
+- [VWReval]((https://github.com/C4co/vw/blob/master/docs/vw_reveal.md): A widget that reveals it's child with a custom animation.
 
 ---
 
