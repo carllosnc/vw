@@ -36,7 +36,7 @@ alignment options.
 
 - [VWBox](https://github.com/C4co/vw/blob/master/docs/vw_box.md): A box with background image, gradient, blur effect, and custom border radius.
 
-- [VWReval](https://github.com/C4co/vw/blob/master/docs/vw_reveal.md): A widget that reveals it's child with a custom animation.
+- [VWReveal](https://github.com/C4co/vw/blob/master/docs/vw_reveal.md): A widget that reveals it's child with a custom animation.
 
 ---
 
