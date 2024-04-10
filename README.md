@@ -38,6 +38,8 @@ alignment options.
 
 - [VWReveal](https://github.com/C4co/vw/blob/master/docs/vw_reveal.md): A widget that reveals it's child with a custom animation.
 
+- [VWText](https://github.com/C4co/vw/blob/master/docs/vw_text.md): A text widget with support to markup with tags.
+
 ---
 
 Carlos Costa @ 2023
