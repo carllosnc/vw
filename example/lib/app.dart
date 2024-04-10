@@ -8,6 +8,7 @@ import './examples/vw_select_example.dart';
 import './examples/vw_modal_example.dart';
 import './examples/vw_box_example.dart';
 import './examples/vw_reveal_example.dart';
+import './examples/vw_text_example.dart';
 
 import 'home.dart';
 
@@ -48,6 +49,7 @@ class App extends StatelessWidget {
         '/vw_modal': (context) => const VWModalExample(),
         '/vw_box': (context) => const VWBoxExample(),
         '/vw_reveal': (context) => const VWRevealExample(),
+        '/vw_text': (context) => const VWTextExample(),
       },
     );
   }
