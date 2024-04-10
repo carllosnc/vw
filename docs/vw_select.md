@@ -1,4 +1,4 @@
-## VWSelect
+# VWSelect
 
 A StatelessWidget that provides a customizable select option widget.
 
@@ -12,7 +12,7 @@ A StatelessWidget that provides a customizable select option widget.
 | `headerBoxDecoration` | BoxDecoration?                   | The decoration to show around the header of the dropdown menu. |
 | `validator`           | String? Function(String? value)? | Called when the user submits the form.                         |
 
-### VWSelectOption
+## VWSelectOption
 
 A class that represents an option in the dropdown menu.
 

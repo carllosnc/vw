@@ -1,4 +1,4 @@
-## VWPage
+# VWPage
 
 A sealed class that provides a method to open a new page.
 
@@ -8,7 +8,7 @@ VWPage is a floating page, which means that it is not a full-screen page, but a 
 | ------ | ----------------- |
 | `open` | Opens a new page. |
 
-### open method
+## open method
 
 | Parameter | Type         | Description                                                                           |
 | --------- | ------------ | ------------------------------------------------------------------------------------- |

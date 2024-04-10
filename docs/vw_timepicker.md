@@ -1,4 +1,4 @@
-## VWTimePicker
+# VWTimePicker
 
 A StatefulWidget that provides a customizable time picker.
 
@@ -15,7 +15,7 @@ A StatefulWidget that provides a customizable time picker.
 | `errorInvalidText` | `String`                     | The error invalid text to show in the time picker. |
 | `style`            | `TextStyle`                  | Style to decorate textfield                        |
 
-Example usage:
+## Example
 
 ```dart
 VWTimePicker(
