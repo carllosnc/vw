@@ -1,16 +1,17 @@
 # VWSelect
 
-A StatelessWidget that provides a customizable select option widget.
+Select option widget based on bottom sheet.
 
-| Property              | Type                             | Description                                                    |
-| --------------------- | -------------------------------- | -------------------------------------------------------------- |
-| `inputDecoration`     | InputDecoration?                 | The decoration to show around the dropdown button.             |
-| `options`             | List<VWSelectOption>             | The list of options to display in the dropdown menu.           |
-| `onSelected`          | Function(dynamic value)          | Called when the user selects an option.                        |
-| `title`               | String                           | The title of the dropdown button.                              |
-| `titleTextStyle`      | TextStyle?                       | The style to use for the title text.                           |
-| `headerBoxDecoration` | BoxDecoration?                   | The decoration to show around the header of the dropdown menu. |
-| `validator`           | String? Function(String? value)? | Called when the user submits the form.                         |
+| Property              | Type                             | Description                                                             |
+| --------------------- | -------------------------------- | ----------------------------------------------------------------------- |
+| `inputDecoration`     | InputDecoration?                 | The decoration to show around the dropdown button.                      |
+| `options`             | List<VWSelectOption>             | The list of options to display in the dropdown menu.                    |
+| `onSelected`          | Function(dynamic value)          | Called when the user selects an option.                                 |
+| `title`               | String                           | The title of the dropdown button.                                       |
+| `titleTextStyle`      | TextStyle?                       | The style to use for the title text.                                    |
+| `headerBoxDecoration` | BoxDecoration?                   | The decoration to show around the header of the dropdown menu.          |
+| `validator`           | String? Function(String? value)? | Called when the user submits the form.                                  |
+| `borderRadius`        | Double                           | The border radius of top rigth and top left corner of the bottom sheet. |
 
 ## VWSelectOption
 
@@ -22,7 +23,7 @@ A class that represents an option in the dropdown menu.
 | `listTile`    | ListTile | The ListTile to display in the dropdown menu.                           |
 | `displayText` | String   | The text to display in the dropdown button when the option is selected. |
 
-Example usage:
+**Usage:**
 
 ```dart
 VWSelect(
