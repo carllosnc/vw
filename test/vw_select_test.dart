@@ -8,6 +8,7 @@ void main() {
       MaterialApp(
         home: Scaffold(
           body: VWSelect(
+            title: "Select sample",
             onSelected: (dynamic value) {
               debugPrint(value);
             },
@@ -54,6 +55,8 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.byKey(const Key("vw_select_modal")), findsOneWidget);
+    expect(find.byKey(const Key("vw_select_scaffold")), findsOneWidget);
+    expect(find.byKey(const Key("vw_select_appbar")), findsOneWidget);
     expect(find.byKey(const Key("vw_select_modal_option_0")), findsOneWidget);
     expect(find.byKey(const Key("vw_select_modal_option_1")), findsOneWidget);
     expect(find.byKey(const Key("vw_select_modal_option_2")), findsOneWidget);

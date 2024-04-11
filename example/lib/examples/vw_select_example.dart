@@ -24,7 +24,8 @@ class VWSelectExample extends StatelessWidget {
                   onSelected: (dynamic value) {
                     debugPrint(value);
                   },
-                  title: "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+                  title: "Select sample",
+                  titleTextStyle: const TextStyle(fontSize: 18),
                   inputDecoration: const InputDecoration(
                     labelText: 'Select',
                     suffixIcon: Icon(Icons.keyboard_arrow_down_rounded),
@@ -37,15 +38,6 @@ class VWSelectExample extends StatelessWidget {
                     return null;
                   },
                   options: const [
-                    //clear select
-                    VWSelectOption(
-                      value: null,
-                      displayText: "",
-                      listTile: ListTile(
-                        title: Text('Clear select'),
-                        leading: Icon(Icons.clear),
-                      ),
-                    ),
                     VWSelectOption(
                       value: '1',
                       displayText: "First item",
@@ -61,7 +53,7 @@ class VWSelectExample extends StatelessWidget {
                       listTile: ListTile(
                         title: Text('Item 2'),
                         subtitle: Text("Second item description"),
-                        leading: Icon(Icons.star),
+                        leading: Icon(Icons.abc_rounded),
                       ),
                     ),
                     VWSelectOption(
@@ -70,7 +62,7 @@ class VWSelectExample extends StatelessWidget {
                       listTile: ListTile(
                         title: Text('Item 3'),
                         subtitle: Text("Third item description"),
-                        leading: Icon(Icons.star),
+                        leading: Icon(Icons.ac_unit_sharp),
                       ),
                     ),
                     VWSelectOption(
@@ -79,7 +71,7 @@ class VWSelectExample extends StatelessWidget {
                       listTile: ListTile(
                         title: Text('Item 4'),
                         subtitle: Text("Fourth item description"),
-                        leading: Icon(Icons.star),
+                        leading: Icon(Icons.access_time),
                       ),
                     ),
                     VWSelectOption(
@@ -88,7 +80,7 @@ class VWSelectExample extends StatelessWidget {
                       listTile: ListTile(
                         title: Text('Item 5'),
                         subtitle: Text("Fifth item description"),
-                        leading: Icon(Icons.star),
+                        leading: Icon(Icons.adf_scanner),
                       ),
                     ),
                     VWSelectOption(
@@ -97,7 +89,7 @@ class VWSelectExample extends StatelessWidget {
                       listTile: ListTile(
                         title: Text('Item 6'),
                         subtitle: Text("Sixth item description"),
-                        leading: Icon(Icons.star),
+                        leading: Icon(Icons.accessibility_sharp),
                       ),
                     ),
                     VWSelectOption(
@@ -106,7 +98,7 @@ class VWSelectExample extends StatelessWidget {
                       listTile: ListTile(
                         title: Text('Item 7'),
                         subtitle: Text("Seventh item description"),
-                        leading: Icon(Icons.star),
+                        leading: Icon(Icons.account_balance_sharp),
                       ),
                     ),
                     VWSelectOption(
@@ -115,7 +107,7 @@ class VWSelectExample extends StatelessWidget {
                       listTile: ListTile(
                         title: Text('Item 8'),
                         subtitle: Text("Eighth item description"),
-                        leading: Icon(Icons.star),
+                        leading: Icon(Icons.account_balance_wallet_outlined),
                       ),
                     ),
                     VWSelectOption(
@@ -124,7 +116,7 @@ class VWSelectExample extends StatelessWidget {
                       listTile: ListTile(
                         title: Text('Item 9'),
                         subtitle: Text("Ninth item description"),
-                        leading: Icon(Icons.star),
+                        leading: Icon(Icons.account_box_outlined),
                       ),
                     ),
                     VWSelectOption(
@@ -133,7 +125,7 @@ class VWSelectExample extends StatelessWidget {
                       listTile: ListTile(
                         title: Text('Item 10'),
                         subtitle: Text("Tenth item description"),
-                        leading: Icon(Icons.star),
+                        leading: Icon(Icons.account_tree_sharp),
                       ),
                     ),
                   ],
