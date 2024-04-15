@@ -6,9 +6,9 @@
 
 > This project is a collection of custom, reusable widgets designed to provide additional functionality and customization options beyond the standard Flutter widgets.
 
-## Installation
+## Install
 
-Add the following to your `pubspec.yaml` file:
+This is a unpublished package, so you will need to add it to your `pubspec.yaml` file.
 
 ```yaml
 dependencies:
@@ -16,6 +16,8 @@ dependencies:
     git:
       url: https://github.com/C4co/vw.git
 ```
+
+To more information about unpublished packages see: https://dart.dev/tools/pub/package-layout#unpublished-packages
 
 ## Widgets
 
