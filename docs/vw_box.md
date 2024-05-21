@@ -60,6 +60,7 @@ VWBox(
 | `blurEffect`      | `double`        | The blur effect of the box               |
 | `gradient`        | `Gradient`      | The gradient of the box                  |
 | `padding`         | `EdgeInsets`    | The padding of the box                   |
+| `margin`          | `EdgeInsets`    | The margin of the box                    |
 | `borderRadius`    | `BorderRadius`  | The border radius of the box             |
 | `splashColor`     | `Color`         | The splash color trigged after tap event |
 | `border`          | `Border`        | The border of the box                    |
