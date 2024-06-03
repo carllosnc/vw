@@ -72,7 +72,13 @@ class Home extends StatelessWidget {
             onTap: () {
               Navigator.pushNamed(context, '/vw_text');
             },
-          )
+          ),
+          ListTile(
+            title: const Text('VW If'),
+            onTap: () {
+              Navigator.pushNamed(context, '/vw_if');
+            },
+          ),
         ],
       ),
     );

@@ -8,3 +8,4 @@ export './vw_modal.dart';
 export './vw_box.dart';
 export './vw_reveal.dart';
 export './vw_text.dart';
+export './vw_if.dart';

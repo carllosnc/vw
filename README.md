@@ -42,6 +42,8 @@ alignment options.
 
 - [VWText](https://github.com/C4co/vw/blob/master/docs/vw_text.md): A text widget with support to markup with tags.
 
+- [VWIf](https://github.com/C4co/vw/blob/master/docs/vw_if.md): A widget that conditionally displays widgets based on a boolean condition.
+
 ---
 
 Carlos Costa @ 2023
