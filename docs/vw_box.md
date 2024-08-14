@@ -5,7 +5,7 @@ The `VWBox` is a custom widget that allows you to create a box with a background
 ## Features
 
 - Solid color
-- Gradiend color
+- Gradient color
 - Shadow
 - Blur effect with gradient and images
 - Image background
@@ -50,7 +50,7 @@ VWBox(
 ## Properties
 
 | Property          | Type            | Description                              |
-| ----------------- | --------------- | ---------------------------------------- |
+|-------------------|-----------------|------------------------------------------|
 | `backgroundImage` | `ImageProvider` | The image to be used as background       |
 | `height`          | `double`        | The height of the box                    |
 | `width`           | `double`        | The width of the box                     |
@@ -62,7 +62,7 @@ VWBox(
 | `padding`         | `EdgeInsets`    | The padding of the box                   |
 | `margin`          | `EdgeInsets`    | The margin of the box                    |
 | `borderRadius`    | `BorderRadius`  | The border radius of the box             |
-| `splashColor`     | `Color`         | The splash color trigged after tap event |
+| `splashColor`     | `Color`         | The splash color trigger after tap event |
 | `border`          | `Border`        | The border of the box                    |
 | `child`           | `Widget`        | The child of the box                     |
 

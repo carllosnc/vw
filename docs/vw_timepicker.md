@@ -3,7 +3,7 @@
 A StatefulWidget that provides a customizable time picker.
 
 | Property           | Type                         | Description                                        |
-| ------------------ | ---------------------------- | -------------------------------------------------- |
+|--------------------|------------------------------|----------------------------------------------------|
 | `onChanged`        | `Function(TimeOfDay)`        | Called when the user changes the time.             |
 | `validator`        | `String? Function(String?)?` | Called when the user submits the form.             |
 | `decoration`       | `InputDecoration?`           | The decoration to show around the text field.      |

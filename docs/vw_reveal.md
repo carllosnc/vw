@@ -5,7 +5,7 @@
 ## Properties
 
 | Property    | Description                                                                               | Default                 |
-| ----------- | ----------------------------------------------------------------------------------------- | ----------------------- |
+|-------------|-------------------------------------------------------------------------------------------|-------------------------|
 | `child`     | The widget that will be revealed. This is a required property.                            | N/A                     |
 | `direction` | The direction from which the child widget will be revealed. This is an optional property. | `VWRevealDirection.top` |
 | `delay`     | The delay before the reveal animation starts. This is an optional property.               | N/A                     |

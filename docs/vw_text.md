@@ -28,7 +28,7 @@ class MyWidget extends StatelessWidget {
 ## Properties
 
 | Property     | Type         | Description                          |
-| ------------ | ------------ | ------------------------------------ |
+|--------------|--------------|--------------------------------------|
 | text         | `String`     | The text to display.                 |
 | primaryColor | `Color?`     | The primary color for styled words.  |
 | markColor    | `Color?`     | The color used to mark styled words. |
@@ -40,7 +40,7 @@ The `VWText` widget supports markup syntax to style specific words in the text. 
 
 ## Markup Syntax
 
-The markup syntax is a combination of HTML tags and special characters. The tags are enclosed in angle brackets (`<` and `>`) and can be used to apply different styles to the text. Before marking a word or phrase, you need to enclose it in square brackes `[]` and add the appropriate tag.
+The markup syntax is a combination of HTML tags and special characters. The tags are enclosed in angle brackets (`<` and `>`) and can be used to apply different styles to the text. Before marking a word or phrase, you need to enclose it in square brakes `[]` and add the appropriate tag.
 
 **Example:**
 
@@ -57,6 +57,6 @@ Here are some examples of how the markup syntax can be used:
 - `<u>underline</u>`: This will underline the text.
 - `<m>mark</m>`: This will mark the text with a different color.
 - `<d>deleted</d>`: This will make the text deleted.
-- `<o>overline</o>`: This will make the text overline.
+- `<o>overline</o>`: This will make the text over line.
 - `<pc>primary color</pc>`: This will use the primary color for the text.
 - `<uc>uppercase</uc>`: This will make the text uppercase.
