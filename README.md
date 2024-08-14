@@ -44,7 +44,7 @@ alignment options.
 
 - [VWIf](https://github.com/carllosnc/vw/blob/master/docs/vw_if.md): A widget that conditionally displays widgets based on a boolean condition.
 
-- [VWScreenSizeExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_screen_size_extension.md): Some extensions that provided methos to work with reponsiveness.
+- [VWScreenSizeExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_screen_size_extension.md): Some extensions that provide methods to work with reponsiveness.
 
 ---
 
