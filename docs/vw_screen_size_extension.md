@@ -9,6 +9,13 @@ Example:
 
 Two objects are extended: `BuildContext` and `BoxConstraints`.
 
+## Usage
+
+Just import the VW package.
+```
+import 'package:vw/vw.dart';
+```
+
 ## `context.screenWidth()` and `context.screenHeight()`
 
 Both methods are provided by the `BuildContext` object.
