@@ -1,7 +1,7 @@
 name: vw
-description: Some usefull Flutter widgets.
-version: 0.0.13
-homepage:
+description: Some useful Flutter widgets.
+version: 0.0.14
+homepage: https://github.com/carllosnc/vw
 
 environment:
   sdk: '>=3.1.5 <4.0.0'
