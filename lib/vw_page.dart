@@ -19,10 +19,16 @@ sealed class VWPage {
 
     ///[level] define page height based on the level, to higher the level the lower the height of the page.
     int level = 1,
+
+    ///[backgroundColor] is the background color of the page.
+    Color? backgroundColor,
+
+    ///[borderColor] is the border color of the page.
+    bool isScrollControlled = true,
   }) {
     return showModalBottomSheet(
       useSafeArea: true,
-      isScrollControlled: true,
+      isScrollControlled: isScrollControlled,
       context: context,
       builder: (context) {
         return Container(
@@ -35,6 +41,7 @@ sealed class VWPage {
             ),
           ),
           child: Scaffold(
+            backgroundColor: backgroundColor,
             appBar: appBar,
             body: body,
             bottomNavigationBar: bottomBar,
