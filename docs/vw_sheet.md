@@ -1,8 +1,8 @@
-# VWPage
+# VWSheet
 
 A sealed class that provides a method to open a new page.
 
-VWPage is a floating page, which means that it is not a full-screen page, but a page that floats above the current page.
+VWSheet is a floating page, which means that it is not a full-screen page, but a page that floats above the current page.
 
 | Method | Description       |
 |--------|-------------------|
@@ -25,7 +25,7 @@ Example usage:
 FilledButton(
   child: Text('Open page'),
   onPressed: (){
-    VWPage.open(
+    VWSheet.open(
       appBar: AppBar(
         title: Text('Page Title'),
       ),
@@ -44,7 +44,7 @@ Multi-level page example:
 FilledButton(
   child: const Text('Open first page'),
   onPressed: () {
-    VWPage.open(
+    VWSheet.open(
       level: 1,
       context: context,
       appBar: AppBar(
@@ -62,7 +62,7 @@ FilledButton(
         child: FilledButton(
           child: const Text('open second page'),
           onPressed: () {
-            VWPage.open(
+            VWSheet.open(
               level: 2,
               context: context,
               appBar: AppBar(

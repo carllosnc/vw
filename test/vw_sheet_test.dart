@@ -13,19 +13,19 @@ void main() {
               return Center(
                 child: FilledButton(
                   onPressed: () {
-                    VWPage.open(
+                    VWSheet.open(
                       appBar: AppBar(
-                        title: const Text('VW Page header'),
+                        title: const Text('VW Sheet header'),
                       ),
                       context: context,
                       body: const Center(
-                        child: Text('VW Page body'),
+                        child: Text('VW Sheet body'),
                       ),
                       bottomBar: Container(
                         height: 50,
                         color: Colors.red,
                         child: const Center(
-                          child: Text('VW Page bottom bar'),
+                          child: Text('VW Sheet bottom bar'),
                         ),
                       ),
                     );
@@ -42,9 +42,9 @@ void main() {
 
       await tester.pumpAndSettle();
 
-      expect(find.text('VW Page header'), findsOneWidget);
-      expect(find.text('VW Page body'), findsOneWidget);
-      expect(find.text('VW Page bottom bar'), findsOneWidget);
+      expect(find.text('VW Sheet header'), findsOneWidget);
+      expect(find.text('VW Sheet body'), findsOneWidget);
+      expect(find.text('VW Sheet bottom bar'), findsOneWidget);
     },
   );
 
@@ -59,7 +59,7 @@ void main() {
               return FilledButton(
                 child: const Text('Open first page'),
                 onPressed: () {
-                  VWPage.open(
+                  VWSheet.open(
                     level: 1,
                     context: context,
                     appBar: AppBar(
@@ -77,7 +77,7 @@ void main() {
                       child: FilledButton(
                         child: const Text('open second page'),
                         onPressed: () {
-                          VWPage.open(
+                          VWSheet.open(
                             level: 2,
                             context: context,
                             appBar: AppBar(

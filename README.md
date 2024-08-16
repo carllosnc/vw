@@ -28,7 +28,7 @@ alignment options.
 
 - [VWColum](https://github.com/carllosnc/vw/blob/master/docs/vw_row.md): Similar to VWRow, but for column layout.
 
-- [VWPage](https://github.com/carllosnc/vw/blob/master/docs/vw_page.md): A floating page that floats above the current page.
+- [VWSheet](https://github.com/carllosnc/vw/blob/master/docs/vw_sheet.md): A floating page that floats above the current page.
 
 - [VWTimePicker](https://github.com/carllosnc/vw/blob/master/docs/vw_timepicker.md): A time picker widget based on text field.
 

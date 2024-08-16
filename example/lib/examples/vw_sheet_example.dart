@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:vw/vw.dart';
 
-class VWPageExample extends StatefulWidget {
-  const VWPageExample({super.key});
+class VWSheetExample extends StatefulWidget {
+  const VWSheetExample({super.key});
 
   @override
-  State<VWPageExample> createState() => _VWPageExampleState();
+  State<VWSheetExample> createState() => _VWSheetExampleState();
 }
 
-class _VWPageExampleState extends State<VWPageExample> {
+class _VWSheetExampleState extends State<VWSheetExample> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('VWPageExample'),
+        title: const Text('VWSheetExample'),
       ),
       body: Center(
         child: Column(
@@ -22,7 +22,7 @@ class _VWPageExampleState extends State<VWPageExample> {
             FilledButton(
               child: const Text('Open first page'),
               onPressed: () {
-                VWPage.open(
+                VWSheet.open(
                   level: 1,
                   context: context,
                   appBar: AppBar(
@@ -32,7 +32,7 @@ class _VWPageExampleState extends State<VWPageExample> {
                     child: FilledButton(
                       child: const Text('open second page'),
                       onPressed: () {
-                        VWPage.open(
+                        VWSheet.open(
                           level: 2,
                           context: context,
                           appBar: AppBar(
@@ -42,7 +42,7 @@ class _VWPageExampleState extends State<VWPageExample> {
                             child: FilledButton(
                               child: const Text('open third page'),
                               onPressed: () {
-                                VWPage.open(
+                                VWSheet.open(
                                   level: 3,
                                   context: context,
                                   appBar: AppBar(
@@ -52,7 +52,7 @@ class _VWPageExampleState extends State<VWPageExample> {
                                     child: FilledButton(
                                       child: const Text('open fourth page'),
                                       onPressed: () {
-                                        VWPage.open(
+                                        VWSheet.open(
                                           level: 4,
                                           context: context,
                                           appBar: AppBar(
@@ -60,13 +60,15 @@ class _VWPageExampleState extends State<VWPageExample> {
                                           ),
                                           body: Center(
                                             child: FilledButton(
-                                              child: const Text('open fifth page'),
+                                              child:
+                                                  const Text('open fifth page'),
                                               onPressed: () {
-                                                VWPage.open(
+                                                VWSheet.open(
                                                   level: 5,
                                                   context: context,
                                                   appBar: AppBar(
-                                                    title: const Text('Fifth page'),
+                                                    title: const Text(
+                                                        'Fifth page'),
                                                   ),
                                                   body: const Center(
                                                     child: Text('End'),
@@ -92,7 +94,7 @@ class _VWPageExampleState extends State<VWPageExample> {
             ),
             FilledButton(
               onPressed: () {
-                VWPage.open(
+                VWSheet.open(
                   context: context,
                   appBar: AppBar(
                     leading: IconButton(
@@ -102,7 +104,7 @@ class _VWPageExampleState extends State<VWPageExample> {
                       },
                     ),
                     title: const Text(
-                      'VWPage',
+                      'VWSheet',
                     ),
                     actions: [
                       IconButton(
@@ -215,7 +217,7 @@ class _VWPageExampleState extends State<VWPageExample> {
                   ),
                 );
               },
-              child: const Text('Open VW Page'),
+              child: const Text('Open VW Sheet'),
             ),
           ],
         ),

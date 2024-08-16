@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-sealed class VWPage {
+sealed class VWSheet {
   static Future<dynamic> open({
     ///[appBar] is the header of the page.
     required AppBar appBar,

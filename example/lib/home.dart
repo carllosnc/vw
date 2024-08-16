@@ -32,7 +32,7 @@ class Home extends StatelessWidget {
             },
           ),
           ListTile(
-            title: const Text('VW Page'),
+            title: const Text('VW Sheet'),
             onTap: () {
               Navigator.pushNamed(context, '/vw_page');
             },
