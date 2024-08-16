@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 
 extension ScreenSizeExtension on BuildContext {
+  ///[size] is the size of the screen width based on percentage.
+  ///[offset] is the offset that will be subtracted from the scree width.
   double screenWidth({
     double size = 1,
     double offset = 0,
@@ -9,6 +11,8 @@ extension ScreenSizeExtension on BuildContext {
     return screenSize * size - offset;
   }
 
+  ///[size] is the size of the screen height based on percentage.
+  ///[offset] is the offset that will be subtracted from the screen height.
   double screenHeight({
     double size = 1,
     double offset = 0,
@@ -19,6 +23,8 @@ extension ScreenSizeExtension on BuildContext {
 }
 
 extension BoxSizeExtension on BoxConstraints {
+  ///[size] is the size of the parent width based on percentage.
+  ///[offset] is the offset that will be subtracted from the parent width.
   double boxWidth({
     double size = 1,
     double offset = 0,
@@ -27,6 +33,8 @@ extension BoxSizeExtension on BoxConstraints {
     return (boxSize * size) - offset;
   }
 
+  ///[size] is the size of the parent height based on percentage.
+  ///[offset] is the offset that will be subtracted from the parent height.
   double boxHeight({
     double size = 1,
     double offset = 0,
@@ -37,12 +45,13 @@ extension BoxSizeExtension on BoxConstraints {
 }
 
 extension BreakpointExtension on BuildContext {
-  dynamic breakPoint(Map<double, dynamic> items) {
-    var keys = items.keys.toList();
+  ///[breaks] is a map of breakpoints and their corresponding values.
+  dynamic breakPoint(Map<double, dynamic> breaks) {
+    var keys = breaks.keys.toList();
 
     for (var key in keys) {
       if (key <= MediaQuery.of(this).size.width) {
-        return items[key];
+        return breaks[key];
       }
     }
   }
