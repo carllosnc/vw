@@ -95,6 +95,7 @@ class _VWSheetExampleState extends State<VWSheetExample> {
             FilledButton(
               onPressed: () {
                 VWSheet.open(
+                  borderRadius: 28,
                   context: context,
                   appBar: AppBar(
                     leading: IconButton(

@@ -15,7 +15,7 @@ sealed class VWSheet {
     required Widget body,
 
     ///[borderRadius] is the border radius of top left and top right of the page.
-    double borderRadius = 15,
+    double borderRadius = 0,
 
     ///[level] define page height based on the level, to higher the level the lower the height of the page.
     int level = 1,
@@ -28,12 +28,13 @@ sealed class VWSheet {
   }) {
     return showModalBottomSheet(
       useSafeArea: true,
+      backgroundColor: Colors.transparent,
       isScrollControlled: isScrollControlled,
       context: context,
       builder: (context) {
         return Container(
           height: MediaQuery.of(context).size.height * 0.96 - (15 * level),
-          clipBehavior: Clip.hardEdge,
+          clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(borderRadius),
@@ -41,7 +42,8 @@ sealed class VWSheet {
             ),
           ),
           child: Scaffold(
-            backgroundColor: backgroundColor,
+            backgroundColor:
+                backgroundColor ?? Theme.of(context).colorScheme.surface,
             appBar: appBar,
             body: body,
             bottomNavigationBar: bottomBar,
