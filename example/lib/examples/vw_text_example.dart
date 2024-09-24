@@ -10,7 +10,7 @@ class VWTextExample extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Title'),
+        title: const Text('VWText'),
       ),
       body: SingleChildScrollView(
         child: VWColumn(
