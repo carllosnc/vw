@@ -10,3 +10,5 @@ export './vw_reveal.dart';
 export './vw_text.dart';
 export './vw_if.dart';
 export './extensions/vw_screen_size_extension.dart';
+export './extensions/vw_text_extension.dart';
+export './extensions/vw_container_extension.dart';

@@ -85,6 +85,12 @@ class Home extends StatelessWidget {
               Navigator.pushNamed(context, '/vw_screen_size_extension');
             },
           ),
+          ListTile(
+            title: const Text('VW Text Extension'),
+            onTap: () {
+              Navigator.pushNamed(context, '/vw_text_extension');
+            },
+          ),
         ],
       ),
     );
