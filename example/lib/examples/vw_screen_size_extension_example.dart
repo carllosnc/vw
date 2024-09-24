@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:vw/vw.dart';
 
-class VwScreenSizeExtensionExample extends StatelessWidget {
-  const VwScreenSizeExtensionExample({super.key});
+class VWScreenSizeExtensionExample extends StatelessWidget {
+  const VWScreenSizeExtensionExample({super.key});
 
   @override
   Widget build(BuildContext context) {
