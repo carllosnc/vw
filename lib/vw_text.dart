@@ -71,7 +71,7 @@ class _VWTextState extends State<VWText> {
 
   @override
   Widget build(BuildContext context) {
-    final words = widget.text.split(RegExp(r'\[|\]'));
+    final words = widget.text.split(RegExp(r'[\[\]]'));
 
     List<TextSpan> spans = [];
 
@@ -79,7 +79,7 @@ class _VWTextState extends State<VWText> {
       bool isUppercase = VWTextStyle.checkUppercase(word);
 
       var style = TextStyle(
-        color: VWTextStyle.checkPrimaryColor(word) ? widget.primaryColor : Theme.of(context).colorScheme.onBackground,
+        color: VWTextStyle.checkPrimaryColor(word) ? widget.primaryColor : Theme.of(context).colorScheme.onSurface,
         fontWeight: VWTextStyle.checkBold(word) ? FontWeight.w900 : null,
         fontStyle: VWTextStyle.checkItalic(word) ? FontStyle.italic : null,
         decoration: VWTextStyle.getTextDecoration(word),
