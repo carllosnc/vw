@@ -1,6 +1,6 @@
 name: vw
 description: Some useful Flutter widgets.
-version: 0.0.16
+version: 0.0.18
 homepage: https://github.com/carllosnc/vw
 
 environment:
