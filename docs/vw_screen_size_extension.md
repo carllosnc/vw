@@ -30,14 +30,14 @@ Container(
 **context.screenWidth({ size, offset })**
 
 | Property | Type     | Description                             | Default |
-|----------|----------|-----------------------------------------|---------|
+| -------- | -------- | --------------------------------------- | ------- |
 | `size`   | `double` | The size of the widget as a percentage. | `1`     |
 | `offset` | `double` | The value to offset the size.           | `0`     |
 
 **context.screenHeight({ size, offset })**
 
 | Property | Type     | Description                             | Default |
-|----------|----------|-----------------------------------------|---------|
+| -------- | -------- | --------------------------------------- | ------- |
 | `size`   | `double` | The size of the widget as a percentage. | `1`     |
 | `offset` | `double` | The value to offset the size.           | `0`     |
 
@@ -65,14 +65,14 @@ LayoutBuilder(
 **boxWidth({ size, offset })**
 
 | Property | Type     | Description                             | Default |
-|----------|----------|-----------------------------------------|---------|
+| -------- | -------- | --------------------------------------- | ------- |
 | `size`   | `double` | The size of the widget as a percentage. | `1`     |
 | `offset` | `double` | The value to offset the size.           | `0`     |
 
 **boxHeight({ size, offset })**
 
 | Property | Type     | Description                             | Default |
-|----------|----------|-----------------------------------------|---------|
+| -------- | -------- | --------------------------------------- | ------- |
 | `size`   | `double` | The size of the widget as a percentage. | `1`     |
 | `offset` | `double` | The value to offset the size.           | `0`     |
 
@@ -98,6 +98,6 @@ Scaffold(
 ## `context.breakPoint()`
 
 | Property               | Type      | Description                                          | Required |
-|------------------------|-----------|------------------------------------------------------|----------|
+| ---------------------- | --------- | ---------------------------------------------------- | -------- |
 | `Map<double, dynamic>` | `dynamic` | Map of breakpoints and values that will be returned. | `true`   |
 

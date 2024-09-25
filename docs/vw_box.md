@@ -50,7 +50,7 @@ VWBox(
 ## Properties
 
 | Property          | Type            | Description                              |
-|-------------------|-----------------|------------------------------------------|
+| ----------------- | --------------- | ---------------------------------------- |
 | `backgroundImage` | `ImageProvider` | The image to be used as background       |
 | `height`          | `double`        | The height of the box                    |
 | `width`           | `double`        | The width of the box                     |

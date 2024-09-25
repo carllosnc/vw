@@ -5,13 +5,13 @@ A sealed class that provides a method to open a new page.
 VWSheet is a floating page, which means that it is not a full-screen page, but a page that floats above the current page.
 
 | Method | Description       |
-|--------|-------------------|
+| ------ | ----------------- |
 | `open` | Opens a new page. |
 
 ## open method
 
 | Parameter | Type         | Description                                                                           |
-|-----------|--------------|---------------------------------------------------------------------------------------|
+| --------- | ------------ | ------------------------------------------------------------------------------------- |
 | `appBar`  | AppBar       | The header of the page.                                                               |
 | `context` | BuildContext | The BuildContext of the page.                                                         |
 | `body`    | Widget       | The body of the page.                                                                 |

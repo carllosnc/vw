@@ -28,7 +28,7 @@ class MyWidget extends StatelessWidget {
 ## Properties
 
 | Property     | Type         | Description                          |
-|--------------|--------------|--------------------------------------|
+| ------------ | ------------ | ------------------------------------ |
 | text         | `String`     | The text to display.                 |
 | primaryColor | `Color?`     | The primary color for styled words.  |
 | markColor    | `Color?`     | The color used to mark styled words. |

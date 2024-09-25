@@ -5,7 +5,7 @@
 ## Parameters
 
 | Property              | Type               | Description                                            | Default                    |
-|-----------------------|--------------------|--------------------------------------------------------|----------------------------|
+| --------------------- | ------------------ | ------------------------------------------------------ | -------------------------- |
 | `children`            | List<Widget>       | The widgets to display in the column.                  | `[]`                       |
 | `gap`                 | double             | The gap between the widgets in the column.             | `0`                        |
 | `padding`             | EdgeInsetsGeometry | The padding around the column.                         | `EdgeInsets.all(0)`        |

@@ -5,7 +5,7 @@
 ## Properties
 
 | Property              | Type              | Description                                                       | Default Value                            |
-|-----------------------|-------------------|-------------------------------------------------------------------|------------------------------------------|
+| --------------------- | ----------------- | ----------------------------------------------------------------- | ---------------------------------------- |
 | `label`               | String            | The text that is displayed on the button.                         | `'Button'`                               |
 | `color`               | Color             | The background color of the button.                               | `Theme.of(context).colorScheme.primary`  |
 | `gradient`            | Gradient          | The gradient of the button.                                       | `null`                                   |
