@@ -8,7 +8,7 @@ class VWIfExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Title'),
+        title: const Text('VWIf'),
       ),
       body: const Center(
         child: VWColumn(

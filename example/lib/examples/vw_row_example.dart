@@ -8,7 +8,7 @@ class VWRowExamplePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('VW Components'),
+        title: const Text('VWRow'),
       ),
       body: SingleChildScrollView(
         child: VWColumn(

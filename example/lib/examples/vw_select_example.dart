@@ -10,7 +10,7 @@ class VWSelectExample extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('VW Select'),
+        title: const Text('VWSelect'),
       ),
       body: Form(
         key: formKey,

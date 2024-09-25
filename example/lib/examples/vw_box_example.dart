@@ -13,7 +13,7 @@ class VWBoxExample extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          'Boxy',
+          'VWBox',
           style: TextStyle(
             fontSize: 16,
           ),

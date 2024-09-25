@@ -8,7 +8,7 @@ class VWColumnExamplePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('VW Components'),
+        title: const Text('VWComponents'),
       ),
       body: SingleChildScrollView(
         child: VWColumn(

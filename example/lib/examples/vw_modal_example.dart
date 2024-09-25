@@ -8,7 +8,7 @@ class VWModalExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('VWDialog Example'),
+        title: const Text('VWDialog'),
       ),
       body: Center(
         child: FilledButton(

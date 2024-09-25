@@ -13,7 +13,7 @@ class _VWSheetExampleState extends State<VWSheetExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('VWSheetExample'),
+        title: const Text('VWSheet'),
       ),
       body: Center(
         child: Column(
@@ -60,15 +60,13 @@ class _VWSheetExampleState extends State<VWSheetExample> {
                                           ),
                                           body: Center(
                                             child: FilledButton(
-                                              child:
-                                                  const Text('open fifth page'),
+                                              child: const Text('open fifth page'),
                                               onPressed: () {
                                                 VWSheet.open(
                                                   level: 5,
                                                   context: context,
                                                   appBar: AppBar(
-                                                    title: const Text(
-                                                        'Fifth page'),
+                                                    title: const Text('Fifth page'),
                                                   ),
                                                   body: const Center(
                                                     child: Text('End'),

@@ -59,7 +59,7 @@ class _VWRevealState extends State<VWReveal> {
     return AnimatedSlide(
       key: const Key("vw-reveal-slide"),
       offset: _isVisible ? Offset.zero : widget.direction.getOffset(),
-      curve: Curves.easeInOut,
+      curve: Curves.easeOutQuad,
       duration: const Duration(milliseconds: 300),
       child: AnimatedOpacity(
         key: const Key("vw-reveal-opacity"),

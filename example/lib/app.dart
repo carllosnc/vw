@@ -12,7 +12,6 @@ import './examples/vw_text_example.dart';
 import './examples/vw_if_example.dart';
 import './examples/vw_screen_size_extension_example.dart';
 import './examples/vw_text_extension_example.dart';
-import './examples/vw_container_extension_example.dart';
 
 import 'home.dart';
 
@@ -57,7 +56,6 @@ class App extends StatelessWidget {
         '/vw_if': (context) => const VWIfExample(),
         '/vw_screen_size_extension': (context) => const VWScreenSizeExtensionExample(),
         '/vw_text_extension': (context) => const VWTextExtensionExample(),
-        '/vw_container_extension': (context) => const VWContainerExtensionExample(),
       },
     );
   }

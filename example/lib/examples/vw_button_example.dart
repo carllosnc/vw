@@ -13,7 +13,7 @@ class _VWButtonExampleState extends State<VWButtonExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('VW Buttons'),
+        title: const Text('VWButton'),
       ),
       bottomNavigationBar: const Padding(
         padding: EdgeInsets.all(8.0),

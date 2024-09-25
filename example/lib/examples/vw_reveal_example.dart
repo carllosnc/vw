@@ -8,7 +8,7 @@ class VWRevealExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Title'),
+        title: const Text('VWReveal'),
       ),
       body: Center(
         child: VWColumn(
