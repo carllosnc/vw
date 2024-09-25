@@ -2,7 +2,6 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-/// A simple container with a blur effect.
 class VWBox extends StatelessWidget {
   ///[borderRadius] is the radius of the border.
   final BorderRadius? borderRadius;
