@@ -113,6 +113,7 @@ extension VWTextExtension on Text {
   Text get uppercase {
     return _baseText(
       data: data?.toUpperCase(),
+      style: style?.copyWith(),
     );
   }
 
@@ -120,6 +121,7 @@ extension VWTextExtension on Text {
   Text get lowercase {
     return _baseText(
       data: data?.toLowerCase(),
+      style: style?.copyWith(),
     );
   }
 
@@ -130,6 +132,7 @@ extension VWTextExtension on Text {
 
     return _baseText(
       data: firstLetter + rest,
+      style: style?.copyWith(),
     );
   }
 
@@ -160,6 +163,7 @@ extension VWTextExtension on Text {
   Text get center {
     return _baseText(
       textAlign: TextAlign.center,
+      style: style?.copyWith(),
     );
   }
 
@@ -167,6 +171,7 @@ extension VWTextExtension on Text {
   Text get right {
     return _baseText(
       textAlign: TextAlign.right,
+      style: style?.copyWith(),
     );
   }
 
@@ -174,6 +179,7 @@ extension VWTextExtension on Text {
   Text get left {
     return _baseText(
       textAlign: TextAlign.left,
+      style: style?.copyWith(),
     );
   }
 
@@ -181,6 +187,7 @@ extension VWTextExtension on Text {
   Text get justify {
     return _baseText(
       textAlign: TextAlign.justify,
+      style: style?.copyWith(),
     );
   }
 

@@ -46,6 +46,16 @@ class VWTextExtensionExample extends StatelessWidget {
               Container(
                 color: Colors.red,
                 width: double.infinity,
+                child: "Hello, World!".text.justify.fontSize(30).color(Colors.white).bold.center,
+              ),
+              Container(
+                color: Colors.red,
+                width: double.infinity,
+                child: "Hello, World!".text.justify.fontSize(30).color(Colors.white).bold.right,
+              ),
+              Container(
+                color: Colors.red,
+                width: double.infinity,
                 child: "Hello, World!".text.right.fontSize(30).color(Colors.white),
               ),
               Container(
