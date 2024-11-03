@@ -21,14 +21,14 @@ To more information about unpublished packages see: https://dart.dev/tools/pub/p
 
 ## Widgets
 
+**Components:**
+
 - [VWButton](https://github.com/carllosnc/vw/blob/master/docs/vw_button.md): A customizable button with options for full width, custom colors, gradients, splash color, and icon placements.
 
 - [VWRow](https://github.com/carllosnc/vw/blob/master/docs/vw_column.md): A row widget with additional features like custom gap, padding, margin, and
 alignment options.
 
 - [VWColum](https://github.com/carllosnc/vw/blob/master/docs/vw_row.md): Similar to VWRow, but for column layout.
-
-- [VWSheet](https://github.com/carllosnc/vw/blob/master/docs/vw_sheet.md): A floating page that floats above the current page.
 
 - [VWTimePicker](https://github.com/carllosnc/vw/blob/master/docs/vw_timepicker.md): A time picker widget based on text field.
 
@@ -43,6 +43,10 @@ alignment options.
 - [VWText](https://github.com/carllosnc/vw/blob/master/docs/vw_text.md): A text widget with support to markup with tags.
 
 - [VWIf](https://github.com/carllosnc/vw/blob/master/docs/vw_if.md): A widget that conditionally displays widgets based on a boolean condition.
+
+**Extensions:**
+
+- [VWSheetExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_sheet.md): A floating page that floats above the current page.
 
 - [VWScreenSizeExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_screen_size_extension.md):
 Extension methods to easily work with screen size and responsiveness.
