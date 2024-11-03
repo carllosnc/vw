@@ -47,7 +47,7 @@ alignment options.
 - [VWScreenSizeExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_screen_size_extension.md):
 Extension methods to easily work with screen size and responsiveness.
 
-- [VWTextExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_text_extension.md): Chianable methods to style text.
+- [VWTextExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_text_extension.md): Chainable methods to style text.
 
 ---
 
