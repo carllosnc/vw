@@ -13,11 +13,10 @@ void main() {
               return Center(
                 child: FilledButton(
                   onPressed: () {
-                    VWSheet.open(
+                    context.openSheet(
                       appBar: AppBar(
                         title: const Text('VW Sheet header'),
                       ),
-                      context: context,
                       body: const Center(
                         child: Text('VW Sheet body'),
                       ),
@@ -59,9 +58,8 @@ void main() {
               return FilledButton(
                 child: const Text('Open first page'),
                 onPressed: () {
-                  VWSheet.open(
+                  context.openSheet(
                     level: 1,
-                    context: context,
                     appBar: AppBar(
                       title: const Text('First page'),
                       actions: [
@@ -77,9 +75,8 @@ void main() {
                       child: FilledButton(
                         child: const Text('open second page'),
                         onPressed: () {
-                          VWSheet.open(
+                          context.openSheet(
                             level: 2,
-                            context: context,
                             appBar: AppBar(
                               title: const Text('Second page'),
                               actions: [

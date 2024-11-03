@@ -22,9 +22,8 @@ class _VWSheetExampleState extends State<VWSheetExample> {
             FilledButton(
               child: const Text('Open first page'),
               onPressed: () {
-                VWSheet.open(
+                context.openSheet(
                   level: 1,
-                  context: context,
                   appBar: AppBar(
                     title: const Text('First page'),
                   ),
@@ -32,9 +31,8 @@ class _VWSheetExampleState extends State<VWSheetExample> {
                     child: FilledButton(
                       child: const Text('open second page'),
                       onPressed: () {
-                        VWSheet.open(
+                        context.openSheet(
                           level: 2,
-                          context: context,
                           appBar: AppBar(
                             title: const Text('Second page'),
                           ),
@@ -42,9 +40,8 @@ class _VWSheetExampleState extends State<VWSheetExample> {
                             child: FilledButton(
                               child: const Text('open third page'),
                               onPressed: () {
-                                VWSheet.open(
+                                context.openSheet(
                                   level: 3,
-                                  context: context,
                                   appBar: AppBar(
                                     title: const Text('Third page'),
                                   ),
@@ -52,9 +49,8 @@ class _VWSheetExampleState extends State<VWSheetExample> {
                                     child: FilledButton(
                                       child: const Text('open fourth page'),
                                       onPressed: () {
-                                        VWSheet.open(
+                                        context.openSheet(
                                           level: 4,
-                                          context: context,
                                           appBar: AppBar(
                                             title: const Text('Fourth page'),
                                           ),
@@ -62,9 +58,8 @@ class _VWSheetExampleState extends State<VWSheetExample> {
                                             child: FilledButton(
                                               child: const Text('open fifth page'),
                                               onPressed: () {
-                                                VWSheet.open(
+                                                context.openSheet(
                                                   level: 5,
-                                                  context: context,
                                                   appBar: AppBar(
                                                     title: const Text('Fifth page'),
                                                   ),
@@ -92,9 +87,7 @@ class _VWSheetExampleState extends State<VWSheetExample> {
             ),
             FilledButton(
               onPressed: () {
-                VWSheet.open(
-                  borderRadius: 28,
-                  context: context,
+                context.openSheet(
                   appBar: AppBar(
                     leading: IconButton(
                       icon: const Icon(Icons.close),

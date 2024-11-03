@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 
-sealed class VWSheet {
-  static Future<dynamic> open({
+extension BottomSheetExtension on BuildContext {
+  openSheet({
     ///[appBar] is the header of the page.
     required AppBar appBar,
-
-    ///[context] is the BuildContext of the page.
-    required BuildContext context,
 
     ///[bottomBar] is the bottom bar of the page.
     Widget? bottomBar,
@@ -26,11 +23,11 @@ sealed class VWSheet {
     ///[borderColor] is the border color of the page.
     bool isScrollControlled = true,
   }) {
-    return showModalBottomSheet(
+    showModalBottomSheet(
       useSafeArea: true,
       backgroundColor: Colors.transparent,
       isScrollControlled: isScrollControlled,
-      context: context,
+      context: this,
       builder: (context) {
         return Container(
           height: MediaQuery.of(context).size.height * 0.96 - (15 * level),
@@ -42,8 +39,7 @@ sealed class VWSheet {
             ),
           ),
           child: Scaffold(
-            backgroundColor:
-                backgroundColor ?? Theme.of(context).colorScheme.surface,
+            backgroundColor: backgroundColor ?? Theme.of(context).colorScheme.surface,
             appBar: appBar,
             body: body,
             bottomNavigationBar: bottomBar,
