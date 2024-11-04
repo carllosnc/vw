@@ -34,8 +34,6 @@ alignment options.
 
 - [VWSelect](https://github.com/carllosnc/vw/blob/master/docs/vw_select.md): A select widget based on text field and bottom sheet.
 
-- [VWModal](https://github.com/carllosnc/vw/blob/master/docs/vw_modal.md): A modal component that can be used to display a modal on the screen.
-
 - [VWBox](https://github.com/carllosnc/vw/blob/master/docs/vw_box.md): A box with background image, gradient, blur effect, and custom border radius.
 
 - [VWReveal](https://github.com/carllosnc/vw/blob/master/docs/vw_reveal.md): A widget that reveals it's child with a custom animation.
