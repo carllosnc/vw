@@ -5,7 +5,6 @@ import './examples/vw_button_example.dart';
 import './examples/vw_sheet_example.dart';
 import './examples/vw_timepicker_example.dart';
 import './examples/vw_select_example.dart';
-import './examples/vw_modal_example.dart';
 import './examples/vw_box_example.dart';
 import './examples/vw_reveal_example.dart';
 import './examples/vw_text_example.dart';
@@ -49,7 +48,6 @@ class App extends StatelessWidget {
         '/vw_page': (context) => const VWSheetExample(),
         '/vw_timepicker': (context) => const VWTimepickerExample(),
         '/vw_select': (context) => const VWSelectExample(),
-        '/vw_modal': (context) => const VWModalExample(),
         '/vw_box': (context) => const VWBoxExample(),
         '/vw_reveal': (context) => const VWRevealExample(),
         '/vw_text': (context) => const VWTextExample(),
