@@ -44,7 +44,7 @@ alignment options.
 
 **Extensions:**
 
-- [VWSheetExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_sheet.md): A floating page that floats above the current page.
+- [VWSheetExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_sheet_extension.md): A floating page that floats above the current page.
 
 - [VWScreenSizeExtension](https://github.com/carllosnc/vw/blob/master/docs/vw_screen_size_extension.md):
 Extension methods to easily work with screen size and responsiveness.
